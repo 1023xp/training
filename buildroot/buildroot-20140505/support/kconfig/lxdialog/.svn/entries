@@ -1,98 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/support/kconfig/lxdialog
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-menubox.c
-file
-
-
-
-add
-
-BIG.FAT.WARNING
-file
-
-
-
-add
-
-util.c
-file
-
-
-
-add
-
-yesno.c
-file
-
-
-
-add
-
-textbox.c
-file
-
-
-
-add
-
-dialog.h
-file
-
-
-
-add
-
-.gitignore
-file
-
-
-
-add
-
-check-lxdialog.sh
-file
-
-
-
-add
-
-inputbox.c
-file
-
-
-
-add
-
-checklist.c
-file
-
-
-
-add
-

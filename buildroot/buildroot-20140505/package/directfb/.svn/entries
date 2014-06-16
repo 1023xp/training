@@ -1,77 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/directfb
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-directfb-remove-redefinition-of-__typeof__.patch
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-directfb-fix-missing-davinci-voodoo-header.patch
-file
-
-
-
-add
-
-directfb-imlib2-config.patch
-file
-
-
-
-add
-
-directfb-use-gcc-link.patch
-file
-
-
-
-add
-
-directfb-setregion-lock.patch
-file
-
-
-
-add
-
-directfb.mk
-file
-
-
-
-add
-

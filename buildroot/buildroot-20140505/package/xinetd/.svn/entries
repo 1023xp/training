@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/xinetd
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-xinetd.mk
-file
-
-
-
-add
-
-xinetd-002-destdir.patch
-file
-
-
-
-add
-
-xinetd-001-ar.patch
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-xinetd-003-rpc-fix.patch
-file
-
-
-
-add
-

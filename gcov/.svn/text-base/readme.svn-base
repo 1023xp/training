@@ -1,5 +1,0 @@
-gcc -fprofile-arcs -ftest-coverage test.c
-run ./a.out
-gcov test.c
-read:
-test.c.gcov

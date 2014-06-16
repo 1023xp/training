@@ -1,196 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/python3
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-python3-011-support-library-path-old-compilers.patch
-file
-
-
-
-add
-
-python3-008-distutils-sysconfig-use-sysconfigdata.patch
-file
-
-
-
-add
-
-python3-108-optional-nis.patch
-file
-
-
-
-add
-
-python3-009-distutils-use-python-sysroot.patch
-file
-
-
-
-add
-
-python3-103-optional-sqlite.patch
-file
-
-
-
-add
-
-python3-001-remove-host-header-path.patch
-file
-
-
-
-add
-
-python3-002-properly-detect-if-python-build.patch
-file
-
-
-
-add
-
-python3-105-optional-curses.patch
-file
-
-
-
-add
-
-python3-107-optional-codecs-cjk.patch
-file
-
-
-
-add
-
-python3-110-optional-idle.patch
-file
-
-
-
-add
-
-python3-004-old-stdlib-cache.patch
-file
-
-
-
-add
-
-python3-101-optional-pydoc.patch
-file
-
-
-
-add
-
-python3-005-pyc-pyo-conditional.patch
-file
-
-
-
-add
-
-python3-104-optional-tk.patch
-file
-
-
-
-add
-
-python3-007-disable-extensions.patch
-file
-
-
-
-add
-
-python3-006-cross-compile-getaddrinfo.patch
-file
-
-
-
-add
-
-python3-100-optional-test-modules.patch
-file
-
-
-
-add
-
-python3-010-no-termcap-host-path.patch
-file
-
-
-
-add
-
-python3-003-sysconfigdata-install-location.patch
-file
-
-
-
-add
-
-python3-106-optional-expat.patch
-file
-
-
-
-add
-
-python3-102-optional-2to3.patch
-file
-
-
-
-add
-
-python3.mk
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-python3-109-optional-unicodedata.patch
-file
-
-
-
-add
-

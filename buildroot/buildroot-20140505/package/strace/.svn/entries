@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/strace
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-Config.in
-file
-
-
-
-add
-
-strace-fix-disabled-largefile-syscalls.patch
-file
-
-
-
-add
-
-strace-update-configure.patch
-file
-
-
-
-add
-
-strace-fix-ptrace_peeksiginfo_args.patch
-file
-
-
-
-add
-
-strace.mk
-file
-
-
-
-add
-

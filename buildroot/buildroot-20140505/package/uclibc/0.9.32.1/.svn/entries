@@ -1,84 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/uclibc/0.9.32.1
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-uclibc-0003-libc-sysdeps-add-__kernel_long-and-__kernel_ulong.patch
-file
-
-
-
-add
-
-uclibc-0006-linuxthreads-errno-fix.patch
-file
-
-
-
-add
-
-uclibc-0005-unshare.patch
-file
-
-
-
-add
-
-uclibc-0007-libc-add-non-standard-execvpe-function.patch
-file
-
-
-
-add
-
-uclibc-0001-Fix-e500-__fe_nomask_env-use-of-__set_errno.patch
-file
-
-
-
-add
-
-uclibc-0008-libc-stdlib-add-mkostemp-helpers.patch
-file
-
-
-
-add
-
-uclibc-0004-sparc-errno-fix.patch
-file
-
-
-
-add
-
-uclibc-0002-Fix-__libc_epoll_pwait-compile-failure-on-x86.patch
-file
-
-
-
-add
-

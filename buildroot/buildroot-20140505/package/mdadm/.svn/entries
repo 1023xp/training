@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/mdadm
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-mdadm.mk
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-mdadm-010-add-install-targets-for-mdadm-and-mdmon.patch
-file
-
-
-
-add
-
-mdadm-030-uclibc-redefine-off64_t-as-off_t-if-no-largefile.patch
-file
-
-
-
-add
-
-mdadm-020-uclibc-dont-force-largefile.patch
-file
-
-
-
-add
-

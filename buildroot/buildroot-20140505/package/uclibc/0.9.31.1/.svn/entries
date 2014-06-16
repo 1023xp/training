@@ -1,119 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/uclibc/0.9.31.1
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-uclibc-0009-unshare.patch
-file
-
-
-
-add
-
-uclibc-0008-more-workarounds-GCC-PR32219.patch
-file
-
-
-
-add
-
-uclibc-0006-fix-error-locale-utf-8.patch
-file
-
-
-
-add
-
-uclibc-0005-fix-daylight-saving-time-handling.patch
-file
-
-
-
-add
-
-uclibc-0012-netlinkaccess-header-types.patch
-file
-
-
-
-add
-
-uclibc-0001-add-bsd-endian-conversions.patch
-file
-
-
-
-add
-
-uclibc-0011-startfiles-Make-targets.patch
-file
-
-
-
-add
-
-uclibc-0010-workaround-GCC-PR32219.patch
-file
-
-
-
-add
-
-uclibc-0013-libc-sysdeps-add-__kernel_long-and-__kernel_ulong.patch
-file
-
-
-
-add
-
-uclibc-0007-linuxthreads-errno-fix.patch
-file
-
-
-
-add
-
-uclibc-0003-add-sock-cloexec.patch
-file
-
-
-
-add
-
-uclibc-0002-add-inotify-init1.patch
-file
-
-
-
-add
-
-uclibc-0004-export-strverscmp.patch
-file
-
-
-
-add
-

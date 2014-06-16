@@ -1,105 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/at
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-at-0005-Makefile.in-make-install-fix.patch
-file
-
-
-
-add
-
-S99at
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
-at-0001-configure.ac-remove-manual-compiler-check-with-AC_TR.patch
-file
-
-
-
-add
-
-at.mk
-file
-
-
-
-add
-
-at-0004-Makefile.in-replace-IROOT-by-DESTDIR.patch
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-at-0003-Makefile.in-add-LDFLAGS-to-linking-stage.patch
-file
-
-
-
-add
-
-at-0007-parsetime.l-include-config-h.patch
-file
-
-
-
-add
-
-at-0002-configure.ac-convert-AC_TRY_COMPILE-AC_COMPILE_IFELS.patch
-file
-
-
-
-add
-
-at-0006-getloadavg.c-fix.patch
-file
-
-
-
-add
-

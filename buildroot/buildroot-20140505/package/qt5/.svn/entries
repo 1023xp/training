@@ -1,147 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/qt5
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-qt5multimedia
-dir
-
-
-
-add
-
-qt5graphicaleffects
-dir
-
-
-
-add
-
-qt5sensors
-dir
-
-
-
-add
-
-qt5quick1
-dir
-
-
-
-add
-
-qt5svg
-dir
-
-
-
-add
-
-qt5quickcontrols
-dir
-
-
-
-add
-
-qt5x11extras
-dir
-
-
-
-add
-
-qt5script
-dir
-
-
-
-add
-
-qt5base
-dir
-
-
-
-add
-
-qt5imageformats
-dir
-
-
-
-add
-
-qt5connectivity
-dir
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-qt5xmlpatterns
-dir
-
-
-
-add
-
-qt5declarative
-dir
-
-
-
-add
-
-qt5serialport
-dir
-
-
-
-add
-
-qt5.mk
-file
-
-
-
-add
-
-qt5webkit
-dir
-
-
-
-add
-

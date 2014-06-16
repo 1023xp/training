@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/mongrel2
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-Config.in
-file
-
-
-
-add
-
-mongrel2.mk
-file
-
-
-
-add
-
-mongrel2-0003-Fix-Makefiles-for-cross-compilation.patch
-file
-
-
-
-add
-
-mongrel2-0001-use-CC-variable-to-compile-procer.patch
-file
-
-
-
-add
-
-mongrel2-0002-Do-not-run-tests.patch
-file
-
-
-
-add
-

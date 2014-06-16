@@ -1,77 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/gcc/4.9.0
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-810-arm-softfloat-libgcc.patch
-file
-
-
-
-add
-
-302-c99-snprintf.patch
-file
-
-
-
-add
-
-840-microblaze-enable-dwarf-eh-support.patch
-file
-
-
-
-add
-
-830-arm_unbreak_armv4t.patch
-file
-
-
-
-add
-
-301-missing-execinfo_h.patch
-file
-
-
-
-add
-
-powerpc-link-with-math-lib.patch.conditional
-file
-
-
-
-add
-
-100-uclibc-conf.patch
-file
-
-
-
-add
-

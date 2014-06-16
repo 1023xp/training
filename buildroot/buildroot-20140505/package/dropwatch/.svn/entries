@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/dropwatch
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-Config.in
-file
-
-
-
-add
-
-dropwatch-02-binutils-2.23.1.patch
-file
-
-
-
-add
-
-dropwatch.mk
-file
-
-
-
-add
-
-dropwatch-03-remove-werror.patch
-file
-
-
-
-add
-
-dropwatch-01-build.patch
-file
-
-
-
-add
-

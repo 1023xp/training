@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/transmission
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-transmission-02-fix-cxx-check-with-ccache.patch
-file
-
-
-
-add
-
-S92transmission
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-transmission.mk
-file
-
-
-
-add
-
-transmission-01-fix-utypes.patch
-file
-
-
-
-add
-

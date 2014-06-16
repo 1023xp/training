@@ -1,1673 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/x11r7
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-xlib_libXxf86vm
-dir
-
-
-
-add
-
-xapp_xman
-dir
-
-
-
-add
-
-xapp_mkfontscale
-dir
-
-
-
-add
-
-xapp_xload
-dir
-
-
-
-add
-
-xapp_xsm
-dir
-
-
-
-add
-
-xfont_font-bh-75dpi
-dir
-
-
-
-add
-
-xserver_xorg-server
-dir
-
-
-
-add
-
-xproto_xineramaproto
-dir
-
-
-
-add
-
-xfont_font-misc-meltho
-dir
-
-
-
-add
-
-xproto_applewmproto
-dir
-
-
-
-add
-
-xcursor-transparent-theme
-dir
-
-
-
-add
-
-xdriver_xf86-video-v4l
-dir
-
-
-
-add
-
-xproto_scrnsaverproto
-dir
-
-
-
-add
-
-xdriver_xf86-video-savage
-dir
-
-
-
-add
-
-xcb-util-wm
-dir
-
-
-
-add
-
-xfont_font-screen-cyrillic
-dir
-
-
-
-add
-
-xapp_fslsfonts
-dir
-
-
-
-add
-
-xapp_xstdcmap
-dir
-
-
-
-add
-
-xapp_xset
-dir
-
-
-
-add
-
-xdriver_xf86-video-tga
-dir
-
-
-
-add
-
-xproto_renderproto
-dir
-
-
-
-add
-
-xlib_libX11
-dir
-
-
-
-add
-
-xlib_libXmu
-dir
-
-
-
-add
-
-xapp_xwud
-dir
-
-
-
-add
-
-xapp_xdm
-dir
-
-
-
-add
-
-xapp_xrandr
-dir
-
-
-
-add
-
-xapp_editres
-dir
-
-
-
-add
-
-xapp_xkbprint
-dir
-
-
-
-add
-
-xdriver_xf86-input-keyboard
-dir
-
-
-
-add
-
-xapp_xkbcomp
-dir
-
-
-
-add
-
-xdriver_xf86-video-dummy
-dir
-
-
-
-add
-
-xapp_xkbutils
-dir
-
-
-
-add
-
-xlib_libdmx
-dir
-
-
-
-add
-
-xdriver_xf86-video-vesa
-dir
-
-
-
-add
-
-xdriver_xf86-video-sis
-dir
-
-
-
-add
-
-xapp_showfont
-dir
-
-
-
-add
-
-xapp_xf86dga
-dir
-
-
-
-add
-
-xproto_dri2proto
-dir
-
-
-
-add
-
-xapp_xprop
-dir
-
-
-
-add
-
-xapp_oclock
-dir
-
-
-
-add
-
-xapp_xlsatoms
-dir
-
-
-
-add
-
-xapp_ico
-dir
-
-
-
-add
-
-libxcb
-dir
-
-
-
-add
-
-xlib_libXxf86dga
-dir
-
-
-
-add
-
-xapp_xdbedizzy
-dir
-
-
-
-add
-
-xdriver_xf86-video-voodoo
-dir
-
-
-
-add
-
-xfont_font-bh-100dpi
-dir
-
-
-
-add
-
-xlib_libXft
-dir
-
-
-
-add
-
-xdata_xbitmaps
-dir
-
-
-
-add
-
-xfont_font-xfree86-type1
-dir
-
-
-
-add
-
-xapp_xdriinfo
-dir
-
-
-
-add
-
-xapp_viewres
-dir
-
-
-
-add
-
-xapp_xclipboard
-dir
-
-
-
-add
-
-xapp_bdftopcf
-dir
-
-
-
-add
-
-xapp_xinput
-dir
-
-
-
-add
-
-xapp_xmh
-dir
-
-
-
-add
-
-xutil_util-macros
-dir
-
-
-
-add
-
-xlib_libXres
-dir
-
-
-
-add
-
-xproto_fontcacheproto
-dir
-
-
-
-add
-
-xapp_xev
-dir
-
-
-
-add
-
-xkeyboard-config
-dir
-
-
-
-add
-
-xproto_kbproto
-dir
-
-
-
-add
-
-xapp_xmodmap
-dir
-
-
-
-add
-
-xdriver_xf86-video-openchrome
-dir
-
-
-
-add
-
-xapp_bitmap
-dir
-
-
-
-add
-
-xdriver_xf86-video-mga
-dir
-
-
-
-add
-
-xfont_font-dec-misc
-dir
-
-
-
-add
-
-xfont_font-bh-ttf
-dir
-
-
-
-add
-
-xproto_xf86dgaproto
-dir
-
-
-
-add
-
-xapp_xcmsdb
-dir
-
-
-
-add
-
-xlib_libXinerama
-dir
-
-
-
-add
-
-xapp_xfd
-dir
-
-
-
-add
-
-xlib_libFS
-dir
-
-
-
-add
-
-xdriver_xf86-video-glint
-dir
-
-
-
-add
-
-xcb-proto
-dir
-
-
-
-add
-
-xfont_font-misc-ethiopic
-dir
-
-
-
-add
-
-xapp_xsetmode
-dir
-
-
-
-add
-
-xdriver_xf86-input-mouse
-dir
-
-
-
-add
-
-xdriver_xf86-video-mach64
-dir
-
-
-
-add
-
-xfont_font-adobe-75dpi
-dir
-
-
-
-add
-
-xdriver_xf86-input-vmmouse
-dir
-
-
-
-add
-
-xapp_xbiff
-dir
-
-
-
-add
-
-xapp_xcursorgen
-dir
-
-
-
-add
-
-xdriver_xf86-input-joystick
-dir
-
-
-
-add
-
-xapp_xfs
-dir
-
-
-
-add
-
-xapp_xwininfo
-dir
-
-
-
-add
-
-xapp_fonttosfnt
-dir
-
-
-
-add
-
-xlib_libXext
-dir
-
-
-
-add
-
-xlib_libXcomposite
-dir
-
-
-
-add
-
-xfont_font-util
-dir
-
-
-
-add
-
-xdriver_xf86-video-wsfb
-dir
-
-
-
-add
-
-xapp_xvinfo
-dir
-
-
-
-add
-
-xfont_font-winitzki-cyrillic
-dir
-
-
-
-add
-
-xapp_xgamma
-dir
-
-
-
-add
-
-xapp_xmessage
-dir
-
-
-
-add
-
-xproto_videoproto
-dir
-
-
-
-add
-
-xdriver_xf86-input-synaptics
-dir
-
-
-
-add
-
-xproto_xproto
-dir
-
-
-
-add
-
-xapp_xlsfonts
-dir
-
-
-
-add
-
-xlib_libXpm
-dir
-
-
-
-add
-
-xapp_xgc
-dir
-
-
-
-add
-
-xlib_libXfixes
-dir
-
-
-
-add
-
-xfont_font-bitstream-type1
-dir
-
-
-
-add
-
-xproto_fixesproto
-dir
-
-
-
-add
-
-xproto_presentproto
-dir
-
-
-
-add
-
-xfont_font-sun-misc
-dir
-
-
-
-add
-
-xapp_xcalc
-dir
-
-
-
-add
-
-xdriver_xf86-video-neomagic
-dir
-
-
-
-add
-
-xutil_makedepend
-dir
-
-
-
-add
-
-xapp_appres
-dir
-
-
-
-add
-
-xdriver_xf86-video-i128
-dir
-
-
-
-add
-
-xapp_xeyes
-dir
-
-
-
-add
-
-xfont_font-misc-cyrillic
-dir
-
-
-
-add
-
-xfont_encodings
-dir
-
-
-
-add
-
-xproto_dmxproto
-dir
-
-
-
-add
-
-x11r7.mk
-file
-
-
-
-add
-
-xcb-util-keysyms
-dir
-
-
-
-add
-
-xapp_xwd
-dir
-
-
-
-add
-
-xdriver_xf86-input-void
-dir
-
-
-
-add
-
-xapp_xvidtune
-dir
-
-
-
-add
-
-xproto_inputproto
-dir
-
-
-
-add
-
-xapp_twm
-dir
-
-
-
-add
-
-xlib_libfontenc
-dir
-
-
-
-add
-
-xproto_glproto
-dir
-
-
-
-add
-
-xlib_libXau
-dir
-
-
-
-add
-
-xfont_font-bitstream-75dpi
-dir
-
-
-
-add
-
-xlib_libXfont
-dir
-
-
-
-add
-
-xfont_font-bh-lucidatypewriter-100dpi
-dir
-
-
-
-add
-
-xfont_font-mutt-misc
-dir
-
-
-
-add
-
-xlib_libXaw
-dir
-
-
-
-add
-
-xapp_luit
-dir
-
-
-
-add
-
-xdriver_xf86-video-tdfx
-dir
-
-
-
-add
-
-xfont_font-misc-misc
-dir
-
-
-
-add
-
-xapp_rstart
-dir
-
-
-
-add
-
-xlib_libXtst
-dir
-
-
-
-add
-
-xcb-util-image
-dir
-
-
-
-add
-
-xapp_xkill
-dir
-
-
-
-add
-
-xapp_listres
-dir
-
-
-
-add
-
-xapp_xmore
-dir
-
-
-
-add
-
-xdriver_xf86-video-fbdev
-dir
-
-
-
-add
-
-xdriver_xf86-video-siliconmotion
-dir
-
-
-
-add
-
-xfont_font-adobe-100dpi
-dir
-
-
-
-add
-
-xapp_xrdb
-dir
-
-
-
-add
-
-xproto_xextproto
-dir
-
-
-
-add
-
-xproto_xf86driproto
-dir
-
-
-
-add
-
-xapp_xfontsel
-dir
-
-
-
-add
-
-xfont_font-adobe-utopia-type1
-dir
-
-
-
-add
-
-xapp_xditview
-dir
-
-
-
-add
-
-xfont_font-schumacher-misc
-dir
-
-
-
-add
-
-xlib_xtrans
-dir
-
-
-
-add
-
-xfont_font-bh-lucidatypewriter-75dpi
-dir
-
-
-
-add
-
-xfont_font-jis-misc
-dir
-
-
-
-add
-
-xapp_xpr
-dir
-
-
-
-add
-
-xlib_libpciaccess
-dir
-
-
-
-add
-
-xproto_xf86bigfontproto
-dir
-
-
-
-add
-
-xapp_xfsinfo
-dir
-
-
-
-add
-
-xlib_libICE
-dir
-
-
-
-add
-
-xapp_xedit
-dir
-
-
-
-add
-
-xdriver_xf86-video-cirrus
-dir
-
-
-
-add
-
-xdriver_xf86-video-trident
-dir
-
-
-
-add
-
-xdriver_xf86-video-intel
-dir
-
-
-
-add
-
-xfont_font-cronyx-cyrillic
-dir
-
-
-
-add
-
-xlib_libXrender
-dir
-
-
-
-add
-
-xapp_xsetpointer
-dir
-
-
-
-add
-
-xproto_recordproto
-dir
-
-
-
-add
-
-xproto_damageproto
-dir
-
-
-
-add
-
-xdriver_xf86-video-ark
-dir
-
-
-
-add
-
-xapp_fstobdf
-dir
-
-
-
-add
-
-xapp_xsetroot
-dir
-
-
-
-add
-
-xapp_xlsclients
-dir
-
-
-
-add
-
-xfont_font-adobe-utopia-75dpi
-dir
-
-
-
-add
-
-xapp_xinit
-dir
-
-
-
-add
-
-xlib_libXi
-dir
-
-
-
-add
-
-mcookie
-dir
-
-
-
-add
-
-xfont_font-cursor-misc
-dir
-
-
-
-add
-
-xproto_bigreqsproto
-dir
-
-
-
-add
-
-xapp_xinput-calibrator
-dir
-
-
-
-add
-
-xlib_libXt
-dir
-
-
-
-add
-
-xdriver_xf86-video-vmware
-dir
-
-
-
-add
-
-xlib_libXv
-dir
-
-
-
-add
-
-xlib_libXrandr
-dir
-
-
-
-add
-
-xlib_libXScrnSaver
-dir
-
-
-
-add
-
-xproto_randrproto
-dir
-
-
-
-add
-
-xdriver_xf86-input-tslib
-dir
-
-
-
-add
-
-xfont_font-bitstream-100dpi
-dir
-
-
-
-add
-
-xdata_xcursor-themes
-dir
-
-
-
-add
-
-xapp_smproxy
-dir
-
-
-
-add
-
-xfont_font-isas-misc
-dir
-
-
-
-add
-
-xapp_xclock
-dir
-
-
-
-add
-
-xapp_xrefresh
-dir
-
-
-
-add
-
-xapp_scripts
-dir
-
-
-
-add
-
-xlib_libXdmcp
-dir
-
-
-
-add
-
-xapp_xlogo
-dir
-
-
-
-add
-
-xapp_xauth
-dir
-
-
-
-add
-
-xapp_xconsole
-dir
-
-
-
-add
-
-xapp_beforelight
-dir
-
-
-
-add
-
-xdriver_xf86-video-geode
-dir
-
-
-
-add
-
-xproto_xcmiscproto
-dir
-
-
-
-add
-
-xfont_font-adobe-utopia-100dpi
-dir
-
-
-
-add
-
-xapp_setxkbmap
-dir
-
-
-
-add
-
-xdriver_xf86-video-ast
-dir
-
-
-
-add
-
-xdriver_xf86-video-r128
-dir
-
-
-
-add
-
-xfont_font-arabic-misc
-dir
-
-
-
-add
-
-xproto_windowswmproto
-dir
-
-
-
-add
-
-xapp_xhost
-dir
-
-
-
-add
-
-xproto_compositeproto
-dir
-
-
-
-add
-
-xapp_rgb
-dir
-
-
-
-add
-
-xdriver_xf86-input-evdev
-dir
-
-
-
-add
-
-xproto_xf86vidmodeproto
-dir
-
-
-
-add
-
-xapp_sessreg
-dir
-
-
-
-add
-
-xfont_font-sony-misc
-dir
-
-
-
-add
-
-xapp_xbacklight
-dir
-
-
-
-add
-
-xlib_libXcursor
-dir
-
-
-
-add
-
-xapp_iceauth
-dir
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-xfont_font-alias
-dir
-
-
-
-add
-
-xlib_libXdamage
-dir
-
-
-
-add
-
-xfont_font-bh-type1
-dir
-
-
-
-add
-
-xapp_xkbevd
-dir
-
-
-
-add
-
-xdriver_xf86-video-ati
-dir
-
-
-
-add
-
-xapp_x11perf
-dir
-
-
-
-add
-
-xlib_libXvMC
-dir
-
-
-
-add
-
-xdriver_xf86-video-nv
-dir
-
-
-
-add
-
-xapp_xmag
-dir
-
-
-
-add
-
-xfont_font-micro-misc
-dir
-
-
-
-add
-
-xlib_libSM
-dir
-
-
-
-add
-
-xdriver_xf86-video-glide
-dir
-
-
-
-add
-
-xapp_mkfontdir
-dir
-
-
-
-add
-
-xproto_resourceproto
-dir
-
-
-
-add
-
-xcb-util
-dir
-
-
-
-add
-
-xproto_fontsproto
-dir
-
-
-
-add
-
-xapp_xdpyinfo
-dir
-
-
-
-add
-
-xfont_font-daewoo-misc
-dir
-
-
-
-add
-
-xfont_font-ibm-type1
-dir
-
-
-
-add
-
-xlib_libxkbfile
-dir
-
-
-
-add
-

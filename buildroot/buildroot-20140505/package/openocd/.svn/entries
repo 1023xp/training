@@ -1,91 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/openocd
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-openocd-0001-fix-cross-compilation-host-libsub-was-used-before.patch
-file
-
-
-
-add
-
-openocd-0003-force-gnu99.patch
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-openocd-0004-force_jimtcl_static.patch
-file
-
-
-
-add
-
-openocd.mk
-file
-
-
-
-add
-
-openocd-0006-automake-compat.patch
-file
-
-
-
-add
-
-openocd-0002-fix-xscale-uninitialise-breakpoint_pc.patch
-file
-
-
-
-add
-
-openocd-0005-dont-force-ldflags.patch
-file
-
-
-
-add
-
-Config.in.host
-file
-
-
-
-add
-

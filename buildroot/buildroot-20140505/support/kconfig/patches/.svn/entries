@@ -1,91 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/support/kconfig/patches
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-15-fix-qconf-moc-rule.patch
-file
-
-
-
-add
-
-16-fix-space-to-de-select-options.patch
-file
-
-
-
-add
-
-10-br-build-system.patch
-file
-
-
-
-add
-
-14-support-out-of-tree-config.patch
-file
-
-
-
-add
-
-06-br-build-system-integration.patch
-file
-
-
-
-add
-
-12-fix-glade-file-path.patch
-file
-
-
-
-add
-
-11-use-mktemp-for-lxdialog.patch
-file
-
-
-
-add
-
-series
-file
-
-
-
-add
-
-01-kconfig-kernel-to-buildroot.patch
-file
-
-
-
-add
-

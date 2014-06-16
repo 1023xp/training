@@ -1,70 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/sunxi-mali
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-glesv2.pc
-file
-
-
-
-add
-
-sunxi-mali-0001-Add-missing-GLchar-definitions.patch
-file
-
-
-
-add
-
-egl.pc
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-sunxi-mali.mk
-file
-
-
-
-add
-
-S80mali
-file
-
-
-
-add
-

@@ -1,140 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board/qemu
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-powerpc-g3beige
-dir
-
-
-
-add
-
-sh4-r2d
-dir
-
-
-
-add
-
-mipsel-malta
-dir
-
-
-
-add
-
-x86
-dir
-
-
-
-add
-
-microblazebe-mmu
-dir
-
-
-
-add
-
-arm-nuri
-dir
-
-
-
-add
-
-arm-vexpress
-dir
-
-
-
-add
-
-sparc-ss10
-dir
-
-
-
-add
-
-x86_64
-dir
-
-
-
-add
-
-mips64el-malta
-dir
-
-
-
-add
-
-powerpc-virtex-ml507
-dir
-
-
-
-add
-
-microblazeel-mmu
-dir
-
-
-
-add
-
-mips-malta
-dir
-
-
-
-add
-
-powerpc-mpc8544ds
-dir
-
-
-
-add
-
-arm-versatile
-dir
-
-
-
-add
-
-mips64-malta
-dir
-
-
-
-add
-

@@ -1,133 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/efl
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-libefreet
-dir
-
-
-
-add
-
-libeina
-dir
-
-
-
-add
-
-libeio
-dir
-
-
-
-add
-
-libeet
-dir
-
-
-
-add
-
-expedite
-dir
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-libethumb
-dir
-
-
-
-add
-
-efl.mk
-file
-
-
-
-add
-
-libecore
-dir
-
-
-
-add
-
-libembryo
-dir
-
-
-
-add
-
-libevas
-dir
-
-
-
-add
-
-libevas-generic-loaders
-dir
-
-
-
-add
-
-libedbus
-dir
-
-
-
-add
-
-libelementary
-dir
-
-
-
-add
-
-libedje
-dir
-
-
-
-add
-

@@ -1,63 +1,0 @@
-10
-
-dir
-0
-https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/gettext
-https://ldd6410.googlecode.com/svn
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2289ec02-a210-11de-bfb1-cf57f9aef694
-
-gettext-03-option-to-disable-tools.patch
-file
-
-
-
-add
-
-gettext-04-remove-examples-tests.patch
-file
-
-
-
-add
-
-gettext.mk
-file
-
-
-
-add
-
-Config.in
-file
-
-
-
-add
-
-gettext-01-error_print_progname.patch
-file
-
-
-
-add
-
