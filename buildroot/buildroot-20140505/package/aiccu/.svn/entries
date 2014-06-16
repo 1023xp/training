@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/aiccu
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+aiccu-0001-gnutls-and-uclibc-fixes.patch
+file
+
+
+
+add
+
+aiccu-0002-makefile-reorder-linked-libraries.patch
+file
+
+
+
+add
+
+aiccu.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+aiccu-0003-clock-suite-functions-fix.patch
+file
+
+
+
+add
+

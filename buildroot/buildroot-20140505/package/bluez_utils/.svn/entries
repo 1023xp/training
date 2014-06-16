@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/bluez_utils
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+bluez_utils.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+bluez_utils-4.101-enable_cg2900_on_upstream_4.91.patch
+file
+
+
+
+add
+

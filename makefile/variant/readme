@@ -1,0 +1,15 @@
+make DEFINE_VRE=true OPT=define
+#输出：Hello World!
+make DEFINE_VRE=true OPT=add
+#输出：Hello World! Kelly!
+make DEFINE_VRE=true OPT=recover
+#输出：Hello World! Again!
+make DEFINE_VRE= OPT=define
+#输出：Hello World! First!
+make DEFINE_VRE= OPT=add
+#输出：Kelly!
+make DEFINE_VRE= OPT=recover
+#输出：Hello World! Again!
+
+# = make会将整个makefile展开后，再决定变量的值。也就是说，变量的值将会是整个makefile中最后被指定的值
+# =: 变量的值决定于它在makefile中的位置，而不是整个makefile展开后的最终值。

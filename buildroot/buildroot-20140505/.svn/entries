@@ -1,0 +1,196 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+package
+dir
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+linux
+dir
+
+
+
+add
+
+dl
+dir
+
+
+
+add
+
+output
+dir
+
+
+
+add
+
+..config.tmp
+file
+
+
+
+add
+
+.defconfig
+file
+
+
+
+add
+
+boot
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+fs
+dir
+
+
+
+add
+
+COPYING
+file
+
+
+
+add
+
+CHANGES
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+support
+dir
+
+
+
+add
+
+Config.in.legacy
+file
+
+
+
+add
+
+arch
+dir
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+toolchain
+dir
+
+
+
+add
+
+Makefile.legacy
+file
+
+
+
+add
+
+.config
+file
+
+
+
+add
+
+system
+dir
+
+
+
+add
+
+board
+dir
+
+
+
+add
+
+configs
+dir
+
+
+
+add
+
+docs
+dir
+
+
+
+add
+

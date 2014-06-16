@@ -1,0 +1,105 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/binutils
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+Config.in
+file
+
+
+
+add
+
+8351467c933d277ebea0c8d99ad2b65b5f7b6bc2
+dir
+
+
+
+add
+
+binutils.mk
+file
+
+
+
+add
+
+2.20.1
+dir
+
+
+
+add
+
+2.21.1
+dir
+
+
+
+add
+
+2.21
+dir
+
+
+
+add
+
+2.23.1
+dir
+
+
+
+add
+
+2.22
+dir
+
+
+
+add
+
+2.23.2
+dir
+
+
+
+add
+
+2.24
+dir
+
+
+
+add
+
+Config.in.host
+file
+
+
+
+add
+

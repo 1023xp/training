@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/gcc/4.2.2-avr32-2.1.5
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+904-avr32-fix-conditional-insn-which-clobbers-cc_status.patch
+file
+
+
+
+add
+
+990-fix-300-libstdc++-pic.patch
+file
+
+
+
+add
+
+903-avr32-fix-removal-of-redundant-cast-operations.patch
+file
+
+
+
+add
+
+905-avr32-optimize-movsf2-use-movh-to-move-immediates-into-register.patch
+file
+
+
+
+add
+
+1001-gcc-4.2.x-inhibit-libc.patch
+file
+
+
+
+add
+

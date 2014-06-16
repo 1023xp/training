@@ -1,0 +1,443 @@
+opcontrol --init
+opcontrol --setup --event=CPU_CLK_UNHALTED:6000::0:1
+opcontrol --start
+opcontrol --dump
+opcontrol --stop 
+
+
+
+用OProfile 彻底了解性能
+
+
+    由于在硬件和软件之间有一些意料之外的交互，分析 Linux 操作系统和应用程序的代码可能是很困难的，但评测（ profiling ）办法可以识别出系统的性能问题。本文介绍的是 Oprofile，这是一种用于 Linux 的评测工具，将包含在即将发布的稳定内核中。
+
+评测 是表示不同性能特性和特征的数据的形式化总结或分析，它通常以图形和表的形式的出现。评测表提供为特定的处理器事件收集的采样的百分数或数量，比如高速缓存线路故障的数量、传输后备缓存( TLB )故障的数量，等等。
+
+Oprofile 是用于 Linux 的若干种评测和性能监控工具中的一种。它可以工作在不同的体系结构上，包括 IA32, IA64 和 AMD Athlon 系列。它的开销小，将被包含在（Linux）2.6 版的内核中。
+
+Oprofile可以帮助用户识别诸如循环的展开、高速缓存的使用率低、低效的类型转换和冗余操作、错误预测转移等问题。它收集有关处理器事件的信息，其中包括TLB的故障、停机、存储器访问、位于 DCU（数据高速缓存单元）中的总线路数、一个 DCU 故障的周期数，以及不可高速缓存的和可高速缓存的指令的获取数量。Oprofile是一种细粒度的工具，可以为指令集或者为函数、系统调用或中断处理例程收集采样。Oprofile 通过取样来工作。使用收集到的评测数据，用户可以很容易地找出性能问题。
+
+安装 Oprofile
+
+Oprofile 包含在 Linux 2.5 和更高版本的内核中，也包含在大多数较新的 Linux 版本中，包括 Red Hat 9 。用户也可以使用在本文后面 参考资料部分中的链接来下载 Oprofile 。用户需要在启用 Oprofile 的情况下重新编译内核。下面介绍具体做法：
+
+   1. 启动Oprofile：
+
+       #cd /usr/src/linux
+       #make xconfig/menuconfig
+
+
+      在评测菜单中启用 Oprofile ，在 .config 文件中设置 CONFIG_PROFILING=y 和 CONFIG_OPROFILE=y 。 另外，还要在 Processor type and features 菜单中启用 Local APIC 和 IO-APIC 。
+   2. 按下面命令格式重新编译：
+
+      #make dep (use for 2.4 kernel versions )
+      #make bzImage 
+
+      启动新内核：
+
+   3. 为了配置和安装 Oprofile 实用工具，键入以下语句：
+
+      #./configure --with-linux=/usr/src/linux/ --with-qt-dir=/usr/lib/qt/
+           --with-kernel-support
+      #make
+      #make install
+
+关于系统要求的信息和更加详细的安装指示，请参阅 参考资料部分中的链接。
+
+Oprofile 工具概述：
+
+    * op_help: 列出可用的事件，并带有简短的描述
+    * opcontrol: 控制 Oprofile 的数据收集
+    * oprofpp: 检索有用的评测数据
+    * op_time: 为系统上的所有映像列出相关的评测值
+    * op_to_source: 产生带注解的源文件、汇编文件或源文件和汇编文件的混合
+    * op_merge: 合并属于同一个应用程序的采样文件
+    * op_import: 将采样数据库文件从外部格式（abi）转换为本地格式
+
+启动评测的三个快速步骤：
+
+   1. 启动 profiler（评测器）：
+
+      # opcontrol --setup --ctr0-event=CPU_CLK_UNHALTED
+          --ctr0-count=600000 --vmlinux=/usr/src/linux-2.4.20/vmlinux
+              For RTC mode users, use --rtc-value=2048
+       # opcontrol --start
+
+   2. 现在评测器已经运行，用户可以开始做他们做的事情：
+
+   3. 用下面的选项来转储被评测的数据：
+
+      # opcontrol --stop/--shutdown/--dump
+
+
+
+      Oprofile 分析：高速缓存利用率问题
+
+高速缓存是最靠近处理器执行单元的存储器，它比主存储器容量小得多，也快得多。它可以在处理器芯片的内部，也可以在处理器芯片的外部。高速缓存中存放的是最频繁使用的指令和数据。由于允许对频繁使用的数据进行快速存取，软件运行要比从主存储器中存取数据快得多。在 Intel IA32 P4 中，数据被存储在每条线路 32 字节的高速缓存线路中。
+
+对于多 CPU 的系统来说，当一个 CPU 修改在 CPU 之间共享的数据的时候，在CPU的高速缓存中的高速缓存线路是无效的。
+
+如果数据或指令没有出现在高速缓存中，或者如果高速缓存线路无效的时候，CPU 通过从主存储器中读数据来更新它的高速缓存。负责做这件事情的处理器事件称为 L2_LINES_IN 。从主存储器读数据需要较多的 CPU 周期。Oprofile 可以帮助用户识别类似于清单 1 所列出的高速缓存问题。
+清单 1. 存在高速缓存问题的程序代码
+
+/*
+ * Shared data being modified by two threads running on different CPUs.
+ */
+/* shared structure between two threads which will be optimized later*/
+struct shared_data_align {
+    unsigned int num_proc1;
+    unsigned int num_proc2;
+};
+/* 
+ * Shared structure between two threads remains unchanged (non optimized)
+ * This is required in order to collect some samples for the L2_LINES_IN event.
+ */
+struct shared_data_nonalign {
+    unsigned int num_proc1;
+    unsigned int num_proc2;
+};
+/*
+ * In the example program below, the parent process creates a clone
+ * thread sharing its memory space. The parent thread running on one CPU 
+ * increments the num_proc1 element of the common and common_aln. The cloned
+ * thread running on another CPU increments the value of num_proc2 element of
+ * the common and common_aln structure.
+ */
+/* Declare global data */
+struct shared_data_nonalign common_aln;
+/*Declare local shared data */
+struct shared_data_align common;
+    /* Now clone a thread sharing memory space with the parent process */
+    if ((pid = clone(func1, buff+8188, CLONE_VM, &common)) < 0) {
+        perror("clone");
+        exit(1);
+    }
+    
+    /* Increment the value of num_proc1 in loop */
+    for (j = 0; j < 200; j++)
+        for(i = 0; i < 100000; i++) {
+            common.num_proc1++;
+        }
+    /* Increment the value of num_proc1 in loop */
+    for (j = 0; j < 200; j++)
+        for(i = 0; i < 100000; i++) {
+            common_aln.num_proc1++;
+        }
+/*
+ * The routine below is called by the cloned thread, to increment the num_proc2 
+ * element of common and common_aln structure in loop.
+ */
+int func1(struct shared_data_align *com)
+{
+    int i, j;
+    /* Increment the value of num_proc2 in loop */
+    for (j = 0; j < 200; j++)
+        for (i = 0; i < 100000; i++) {
+            com->num_proc2++;
+        }
+    /* Increment the value of num_proc2 in loop */
+    for (j = 0; j < 200; j++)
+        for (i = 0; i < 100000; i++) {
+            common_aln.num_proc2++;
+        }
+}    
+
+
+上面的程序是用来评测事件 L2_LINES_IN 的。请注意在 func1 和 main 中收集的采样：
+
+
+清单 2. 用于 L2_LINES_IN 的 Oprofile 数据
+
+# opcontrol --setup --ctr0-event=L2_LINES_IN
+    --ctr0-count=500 --vmlinux=/usr/src/linux-2.4.20/vmlinux
+#opcontrol --start
+#./appln
+#opcontrol --stop
+#oprofpp -l ./appln
+Cpu type: PIII
+Cpu speed was (MHz estimation) : 699.57
+Counter 0 counted L2_LINES_IN events (number of allocated lines in L2) with a 
+unit mask of 0x00 (No unit mask) count 500
+vma      samples  %           symbol name
+080483d0 0        0           _start
+080483f4 0        0           call_gmon_start
+08048420 0        0           __do_global_dtors_aux
+08048480 0        0           fini_dummy
+08048490 0        0           frame_dummy
+080484c0 0        0           init_dummy
+08048630 0        0           __do_global_ctors_aux
+08048660 0        0           init_dummy
+08048670 0        0           _fini
+080484d0 4107     49.2033     main
+080485b8 4240     50.7967     func1
+
+
+现在使用 CPU_CLK_UNHALTED 事件来评测同一个应用程序（可执行文件），这个事件基本上就是收集无停顿地运行的 CPU 周期数的采样。在该例程中收集到的采样数量与处理器在执行指令时所花的时间成正比。收集的采样越多，处理器执行指令所花的时间就越多。请注意在 main 和 func1 中收集的采样数量：
+
+
+清单 3. 为 CPU_CLK_UNHALTED 收集的 Oprofile 数据
+
+#oprofpp -l ./appln
+Cpu type: PIII
+Cpu speed was (MHz estimation) : 699.667
+Counter 0 counted CPU_CLK_UNHALTED events (clocks processor is not halted) with
+a unit mask of 0x00 (No unit mask) count 10000
+vma      samples  %           symbol name
+080483d0 0        0           _start
+080483f4 0        0           call_gmon_start
+08048420 0        0           __do_global_dtors_aux
+08048480 0        0           fini_dummy
+08048490 0        0           frame_dummy
+080484c0 0        0           init_dummy
+08048640 0        0           __do_global_ctors_aux
+08048670 0        0           init_dummy
+08048680 0        0           _fini
+080484d0 40317    49.9356     main
+080485bc 40421    50.0644     func1
+
+
+为了改善性能，现在我们把共享数据结构的两个元素分离到不同的高速缓存线路，从而优化共享的数据结构。在 Intel IA32 P4 处理器中，每条 L2 高速缓存线路的大小是 32 个字节。通过填充 shared_data_align 结构中的第一个元素的28个字节，该结构的元素可以被分离到两个不同的高速缓存线路。现在，父线程修改 shared_data_align 的 num_proc1 ，这导致在首次存取时从 1 号 CPU 的高速缓存线路上读入 num_proc1 。将来父线程对 num_proc1 的存取会导致从该高速缓存线路的数据读入。克隆的线程修改 shared_data_align 的 num_proc2 ，这将导致在 2 号 CPU 的另一条高速缓存线路上获得 num_proc2 。 这两个并行运行的线程分别修改位于不同高速缓存线路上元素 num_proc1 和 num_proc2 。通过把该数据结构的两个元素分离到两条不同的高速缓存线路，一条高速缓存线路的修改就不会导致再次从存储器读入另外一条高速缓存线路。这样，被读入的高速缓存线路的数量就减少了。
+
+
+清单 4. 经过优化的数据结构
+
+    /*
+     * The padding is added to separate the two unsigned ints in such a 
+     * way that the two elements num_proc1 and num_proc2 are on two
+         * different cache lines.
+     */
+struct shared_data_align {
+    unsigned int num_proc1;
+    char padding[28];
+    unsigned int num_proc2;
+};
+    /*
+     * This structure remains unchanged, so that some cache lines 
+      * read in can be seen in profile data.
+     */
+struct shared_data_nonalign {
+    unsigned int num_proc1;
+    unsigned int num_proc2;
+};    
+
+
+注意， shared_data_nonalign 还没有被优化。
+
+既然您已经启用并运行了 Oprofile（已经这样做了，不是吗？），现在您可以试着自己执行下面的一些评测：为事件 L2_LINES_IN 收集 Oprofile 数据，并且将计数器设置为 500，如 清单 2 所示。
+
+还要尝试为事件 CPU_CLK_UNHALTED 收集 Oprofile 数据，同时将计数设置为 10000 。对用优化的和未经优化的方法收集的数据加以比较，并且注意性能的改善。
+
+
+
+
+	
+
+
+Oprofile 分析：转移的错误预测
+
+现代处理器可以实现程序转移预测（请参看 参考资料），因为底层的算法和数据是有规律的。如果预测是正确的，那么程序转移的成本就比较低廉。然而程序转移的预测并不总是正确，并且某些程序转移是很难预测的。可以通过改进软件中的转移预测功能来解决这个问题，也可以通过评测应用程序和内核的事件来解决问题。
+
+清单 5 中的代码显示了程序转移的错误预测。这个程序例子创建了一个与其父进程共享存储器空间的克隆线程。运行在一个处理器上的父进程根据 num_proc2 的值来切换 num_proc1 的值（并且根据由另一个处理器修改的该变量的值进行转移）。编译器简单地假设在任何时候 num_proc2 都等于 1，并且默认地为该转移生成代码 。如果 num_proc2 不等于 1，就说明发生了转移的错误预测。
+
+运行在另一个处理器上的克隆的线程切换 num_proc1 的值（并且根据由另一个处理器修改的该变量的值进行转移）。这导致 num_proc2 不总是等于 1，因而在父线程中发生了转移的错误预测。与此类似，由父线程切换的 num_proc1 的值导致了克隆线程中的转移的错误预测。
+
+
+清单 5. 显示错误转移预测的程序代码
+
+/*shared structure between the two processes */
+struct share_both {
+    unsigned int num_proc1;
+    unsigned int num_proc2;
+};
+    
+/* 
+ * The parent process clones a thread by sharing its memory space. The parent
+ * process just toggles the value of num_proc1 in loop.
+ */
+/* Declare local shared data */
+struct share_both common;
+    /* clones a thread with memory space same as parent thread*/
+    if ((pid = clone(func1, buff+8188, CLONE_VM, &common)) < 0) {
+        perror("clone");
+        exit(1);
+    }
+    /* toggles the value of num_proc1 in loop */    
+    for (j = 0; j < 200; j++)
+        for(i = 0; i < 100000; i++) {
+            if (common.num_proc2)
+                common.num_proc1 = 0;
+            else 
+                common.num_proc1 = 1;
+        }
+    
+/*
+ * The function below is called by the cloned thread, which just toggles the
+ * value of num_proc2 every time in the loop.
+ */
+int func1(struct share_both *com)
+{
+    int i, j;
+    /* toggles the value of num_proc2 in loop */    
+    for (j = 0; j < 200; j++)
+        for (i = 0; i < 100000; i++) {
+            if (com->num_proc1)
+                   com->num_proc2 = 0;
+            else 
+                   com->num_proc2 = 1;
+        }
+}    
+
+
+转移的错误预测可以通过编译上面未经优化的代码来表明：
+
+#gcc -o branch parent_thread_source_code clone_thread_source_code
+
+现在评测该应用程序的 BR_MISS_PRED_TAKEN_RET 事件，同时将计数设置为 500，如 清单 2 所示。注意在 main 和 func1 中收集的采样。
+
+另外评测同一可执行文件的 CPU_CLK_UNHALTED 事件 ，同时将计数设置为 10000，如 清单 2 所示。
+
+也可以通过使用编译器的 -02 选项来优化转移的错误预测：
+
+#gcc -O2 -c clone_thread_source_code
+#gcc -o branch clone_thread_source_code.o parent_thread_source_code
+
+现在开始评测应用程序的 BR_MISS_PRED_TAKEN_RET 和 CPU_CLK_UNHALTED 事件 ，如 清单 2 所示。请注意性能的改善。
+
+让我们在下面关于内核评测的小节中考察另一个错误预测转移的例子。
+
+
+
+
+	
+
+
+内核评测的例子
+
+下面列出的评测数据是通过用于 2.5.70 内核的 kernbench 基准为事件 BR_MISS_PRED_TAKEN_RET 收集的。总共为 vma_merge 收集了 23,360 个采样，为 do_mmap_pgoff 收集了 20,717 个采样。
+
+
+清单 6. 内核的评测数据
+
+# oprofpp -l -i /boot/vmlinux | tail -20
+c0143510 4719     1.26446     page_add_rmap
+c0117740 4791     1.28375     schedule
+c0140320 4825     1.29286     find_vma_prepare
+c010f720 4862     1.30278     sys_mmap2
+c0134fc0 5005     1.34109     __alloc_pages
+c0123670 5473     1.46649     run_timer_softirq
+c0134800 5648     1.51339     bad_range
+c0139250 6571     1.7607      mark_page_accessed
+c0143bd0 6919     1.85395     __pte_chain_free
+c013f180 6973     1.86842     do_no_page
+c0140ec0 7393     1.98096     get_unmapped_area
+c01400f0 8020     2.14896     vm_enough_memory
+c0140ff0 9897     2.65191     find_vma
+c01594e0 10939    2.93111     link_path_walk
+c0134e70 11467    3.07259     buffered_rmqueue
+c0117370 11690    3.13234     scheduler_tick
+c013eeb0 17463    4.67922     do_anonymous_page
+c01153e0 20322    5.44529     do_page_fault
+c01408e0 20717    5.55113     do_mmap_pgoff
+c0140600 23360    6.25933     vma_merge
+
+
+转移的错误预测可以通过删掉转移来排除。在 Intel IA32 处理器中，转移可以通过使用 SETcc 指令或使用 P6 处理器的条件转移指令 move CMOVcc 或者 FCMOVcc 来删除。
+
+下面的C代码行表示了条件转移：
+
+(A > B) ? C1 : C2;
+
+下面是上述该C代码的等价汇编指令：
+
+
+清单 7. 等价的汇编指令
+
+    cmp A, B             ; compare
+    jge L30              ; conditional branch
+    mov ebx, CONST1 
+    jmp L31              ; unconditional branch
+  L30:
+    mov ebx, CONST2
+  L31:
+
+
+可以优化这段代码，以消除类似如下的转移：
+
+
+清单 8. 删除转移后的等价汇编指令
+
+    xor ebx,  ebx            ;
+    cmp A, B
+    setge b1                 ; if ebx = 0 or 1
+    dec ebx
+    and ebx, (CONST2-CONST1)
+    add ebx, min(CONST2,CONST1)     ; ebx = CONST1 or CONST2
+
+
+经过优化的代码将寄存器 EBX 设置为 0，然后比较 A 和 B。如果 A 大于或等于 B， EBX 则被置为 1。 EBX 的值被减少，并且与两个常量值的差执行与（ AND ）操作。这就将 EBX 或者设置为 0，或者将其设置为两个值的差。通过加上两个常量值中较小的一个，这样就把正确的值写到了 EBX 中 。
+
+我希望您已经对 Oprofile 和可以优化内核代码的方法有了一些了解。2.6 版本的内核即将发布，其中将会有大量有关评测的内容。
+
+
+参考资料
+
+    * 您可以参阅本文在 developerWorks 全球站点上的 英文原文.
+
+    * 在 SourceForge 网站的 OProfile 首页上可以阅读更多有关Oprofile的内容。
+
+
+
+    * Oprofile 的 系统需求、 安装说明和 下载页面 也托管在 SourceForge 网站上。
+
+
+    * 在 OProfile 手册页上可以找到大量的 Oprofile 选项。
+
+
+
+    * Oprofile 用有它自己的 邮件列表 。
+
+
+
+    * FOLDOC 提供了对 转移评测 的简单解释。
+
+
+
+    * " 走向 Linux 2.6" ( developerWorks, 2003年9月)介绍了下一个新内核的工作情况。
+
+
+
+    * 了解多位 IBM Linux 技术中心成员对 改善 Linux 内核性能和可伸缩性所作的努力( developerWorks, 2003 年 1 月)。
+
+
+
+    * " 超线程加快了 Linux 的速度" 分析了 Xeon 处理器的超线程技术所承诺的性能改善。( developerWorks, 2003 年 1 月)。
+
+
+
+    * " Efficient, Unified, and Scalable Performance Monitoring for Multiprocessor Operating Systems"是来自 IBM Research 的一篇论文的标题（PDF 格式）。
+
+
+
+    * JaViz ,这篇出自 IBM Systems Journal的文章介绍了这个用于 Java 的客户/服务器评测工具。
+
+
+
+    * 用于AIX系统的 Performance Management Guide，内容包含评测和其他性能监测工具，以及在性能管理上存在的问题。
+
+
+
+    * Dynamic Probes是一种普及的调试工具，用于收集难于得到的诊断信息。
+
+
+
+    * Linux Kernel Performance 项目的目标是通过基准测试和分析来改善 Linux 的性能，重点强调服务器环境中的 SMP 可伸缩性。
+
+
+
+    * 如果所有改善应用程序性能的尝试都失败了，那就说明应该升级硬件了。您可以在 Linux for eServer 页面上获得更多有关在IBM系统上运行 Linux 的信息，在 Speed-start your Linux app Software Evaluation Kit 或 iSeries and pSeries download center找到用于 xSeries（基于 Intel 的处理器）的 Linux 软件下载。
+
+
+
+    * 在 developerWorks 的 Linux 专区可以找到 关于 Linux 的更多文章。
+
+

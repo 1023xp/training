@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/41/trunk/training/exmap-0.10/src
+END
+exmtool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/41/trunk/training/exmap-0.10/src/exmtool.cpp
+END
+t_elf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/t_elf.cpp
+END
+mandriva.artsd.maps
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/mandriva.artsd.maps
+END
+Range.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Range.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/41/trunk/training/exmap-0.10/src/Makefile
+END
+t_exmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/t_exmap.cpp
+END
+mandriva.artsd.readelf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/mandriva.artsd.readelf
+END
+prelinked-amule
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/prelinked-amule
+END
+t_artsd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/t_artsd.cpp
+END
+Range.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Range.hpp
+END
+munged-ls-threeloads
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/munged-ls-threeloads
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Doxyfile
+END
+showproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/showproc.cpp
+END
+elftool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/elftool.cpp
+END
+Elf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/41/trunk/training/exmap-0.10/src/Elf.cpp
+END
+Exmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Exmap.cpp
+END
+Elf.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Elf.hpp
+END
+t_pcre.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/t_pcre.cpp
+END
+Exmap.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/Exmap.hpp
+END
+t_range.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/t_range.cpp
+END
+gexmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/src/gexmap.cpp
+END

@@ -1,0 +1,21 @@
+1. debug multi-thread by gdb
+training/thread/thread_life.c
+
+2. pthread life period
+main creates threads, main (1)ret (2)pthread_exit (3)join
+training/thread/thread_life_mainret.c
+
+3. threaded signal
+training/thread/signalsync.c
+
+4. stack overflow
+training/thread/stack_overflow.c
+
+5. threadpool
+training/thread/thread_pool.cpp
+training/thread/thread_pool_test.cpp
+
+6. gprof
+training/debug/gprof
+
+

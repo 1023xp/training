@@ -1,0 +1,21 @@
+默认输出：
+[root@supersun ~]# iostat
+Linux 2.6.15-1.2054_FC5smp (supersun)   2007年12月18日
+avg-cpu:  %user   %nice %system %iowait   %idle
+           0.10    0.00    1.23    0.36   98.31
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+hda               2.00        48.21        65.59   24490081   33322408
+fd0               0.00         0.00         0.00        400          0
+各指标的含义：
+% user 	 显示了在用户级（应用程序）执行时产生的 CPU 使用率百分比。
+% sys 	显示了在系统级（内核）执行时产生的 CPU 使用率百分比。
+% idle 	显示了在 CPU 空闲并且系统没有未完成的磁盘 I/O 请求时的时间百分比。
+% iowait 	显示了 CPU 空闲期间系统有未完成的磁盘 I/O 请求时的时间百分比。
+[*]Blk_read/s      每秒读入块数
+[*]Blk_wrtn/s      每秒写入块数
+[*]Blk_read        读取总块数
+[*]Blk_wrtn        写入总块数
+
+使用-x显示iostat的扩展信息：
+[root@supersun.biz tmp]#iostat -x
+

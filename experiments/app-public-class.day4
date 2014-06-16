@@ -1,0 +1,24 @@
+1. oom 
+#su
+#swapoff -a
+#echo 1 > /proc/sys/vm/overcommit_memory
+
+run: training/debug/mm/munch.c
+#dmesg
+run: training/debug/mm/mmap.c with/without marco mlockall
+
+2. page reclaim
+launch firefox
+cat /proc/firefox-pid/smaps > 1
+run: training/debug/mm/munch.c
+cat /proc/firefox-pid/smaps > 2
+compare 1 and 2
+
+3. page cache
+#free
+#dd if=/dev/sda1 of=/dev/null
+#free
+compare the output of the two free
+
+4. run top, iostat and iotop
+

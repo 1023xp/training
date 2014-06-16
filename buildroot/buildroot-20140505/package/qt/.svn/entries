@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/qt
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+qt-pthread_getattr_np.patch
+file
+
+
+
+add
+
+qt-script-qtdbus-no-gui.patch
+file
+
+
+
+add
+
+qt-configure.patch
+file
+
+
+
+add
+
+Config.mouse.in
+file
+
+
+
+add
+
+powervr.ini
+file
+
+
+
+add
+
+qt-eglwsegl-use-system.patch
+file
+
+
+
+add
+
+qt-uClibc-lfs-fix.patch
+file
+
+
+
+add
+
+qt-fix-const-atomics.patch
+file
+
+
+
+add
+
+Config.sql.in
+file
+
+
+
+add
+
+Config.keyboard.in
+file
+
+
+
+add
+
+qt.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+Config.gfx.in
+file
+
+
+
+add
+

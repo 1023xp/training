@@ -1,0 +1,75 @@
+rtcheck (0.7.5)  
+  * Fix packaging issues
+  * add changelog and init script
+ -- Vernon Mauery <vernux@us.ibm.com>  Mon, 3 Nov 2008 16:09:01 -0700
+
+rtcheck (0.7.4)
+  * Fix the 0us output for timer resolution test in rtcheck
+ -- Vernon Mauery <vernux@us.ibm.com>  Thu, 25 Sep 2008 14:09:01 -0700
+
+rtcheck (0.7.3)
+  * Re-run global tests if boot_id doesn't match
+  * Don't abort on sched and mlockall, continue and put errors in retcode
+ -- Darren Hart <dvhltc@us.ibm.com>  Mon, 15 Sep 2008 12:32:16 -0700
+
+rtcheck (0.7.2)
+  * Rework hrtimer testing to use clock_nanosleep() and clock_gettime()
+    instead of gettimeofday().  Also removed min/max testing.
+  * Run rtcheck as SCHED_FIFO and mlockall()
+  * Clean up output of rtcheck to maintain consistency
+  * Clean up the usage and help routines
+ -- Darren Hart <dvhltc@us.ibm.com>  Mon, 15 Sep 2008 22:11:10 +0000
+
+rtcheck (0.6.3)
+  * Simplified file read in fetch_rtcheck_status() with fread()
+  * Added flags to display Version, ignore cache result and
+    force execution of all tests, and display a Help message
+  * Fixed array "underflow" bug in verify_lick()
+  * Removed duplicate sched_getparam() test in verify_sched()
+  * Replaced references to RHEL5-RT with RHEL-RT
+  * Removed references to Java in verbose message output
+  * Corrected spelling mistakes
+  * Reverted verify_preempt_rt() test with check for
+    /proc/loadavgrt; rtcheck now relies on /proc to make
+    determinations on rt capabilities - oh well
+  * Added Makefile, README, and CHANGELOG
+  * Fixed return values on do_[user|global]_tests()
+  * cosmetic cleanups
+ -- Timothy R. Chavez <tim.chavez@linux.vnet.ibm.com> Wed, 30 May 2007 13:29:38 -0500
+
+rtcheck (0.6.2)
+  * split tests into global tests and per-user tests
+  * global tests get run at boot and cached
+  * per-user tests get run every time
+ -- Vernon Mauery <vernux@us.ibm.com> Wed, 30 May 2007 16:03:12 -0700
+
+rtcheck (0.6.1)
+  * Updated with feedback from partners
+  * mlock a full 32K of memory
+  * check clock resolution using a median value
+ -- Timothy R. Chavez <tim.chavez@linux.vnet.ibm.com> Wed, 30 May 2007 13:29:38 -0500
+
+rtcheck (0.6)
+  * run once at boot and cache results
+  * validate cache using /proc/boot_id
+ -- Timothy R. Chavez <tim.chavez@linux.vnet.ibm.com> Tue, 29 May 2007 22:38:36 -0500
+
+rtcheck (0.5)
+  * Major rewrites to test rather than inspect
+  * look up kernel symbols in /proc/kallsyms
+  * look up glibc symbols with dlsym
+  * verify memlock works
+  * verify real-time scheduling capability
+  * verify real-time kernel by looking for threaded interrupts
+  * verify resolution on hrtimers
+ -- Timothy R. Chavez <tim.chavez@linux.vnet.ibm.com> Mon, 7 May 2007 16:27:42 -0500
+
+rtcheck (0.2)
+  * Determine kernel version using uname() instead of system()
+  * Additional packaging and copyright/license fixes
+ -- John Kacur <jekacur@ca.ibm.com> Fri, 10 Mar 2006 08:06:13 -0800
+
+rtcheck (0.1)
+  * Original version
+ -- Theodore Ts'o <tytso@mit.edu> Mon, 13 Feb 2006 00:00:10 -0500
+

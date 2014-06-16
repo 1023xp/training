@@ -1,0 +1,371 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/uclibc/0.9.33.2
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+uclibc-0047-_vfprintf.c-use-fputws_unlocked-S-F-instead-of-fputw.patch
+file
+
+
+
+add
+
+uclibc-0010-Rules.mak-fix-breakage-from-603af30d.patch
+file
+
+
+
+add
+
+uclibc-0042-nice-fix-overflow-checking-in-int_add_no_wrap.patch
+file
+
+
+
+add
+
+uclibc-0025-ldso-use-.arm-mode-for-resolver-unconditionally.patch
+file
+
+
+
+add
+
+uclibc-0041-libc-add-posix_fallocate.patch
+file
+
+
+
+add
+
+uclibc-0031-mmap-sys_mmap2-do-unsigned-shift-of-offset.patch
+file
+
+
+
+add
+
+uclibc-0036-mount.h-update.patch
+file
+
+
+
+add
+
+uclibc-0009-mips64-fix-n64-interp.patch
+file
+
+
+
+add
+
+uclibc-0016-nptl-sh-fix-race-condition-in-lll_wait_tid.patch
+file
+
+
+
+add
+
+uclibc-0015-add-posix_madvise.c.patch
+file
+
+
+
+add
+
+uclibc-0037-buildsys-gen_bits_syscall_h-do-not-leave-undefined-S.patch
+file
+
+
+
+add
+
+uclibc-0006-arm-clone-restore-stack-pointer-just-after-return-fr.patch
+file
+
+
+
+add
+
+uclibc-0033-rpmatch-backport-function.patch
+file
+
+
+
+add
+
+uclibc-0034-statfs-support-f_frsize.patch
+file
+
+
+
+add
+
+uclibc-0030-stdio-implement-assignment-allocation-m-character.patch
+file
+
+
+
+add
+
+uclibc-0045-Remove-pragma-weak-for-undeclared-symbol.patch
+file
+
+
+
+add
+
+uclibc-0007-arm-clone.S-Add-missing-IT-instruction-for-Thumb2.patch
+file
+
+
+
+add
+
+uclibc-0051-libubacktrace-fix-backtrace-for-statically-linked-ap.patch
+file
+
+
+
+add
+
+uclibc-0046-inet-fix-getting-the-nameserver-from-_res-state-afte.patch
+file
+
+
+
+add
+
+uclibc-0024-MIPS-Use-a0-instead-of-v0-for-__syscall_error-argume.patch
+file
+
+
+
+add
+
+uclibc-0035-socket.h-pull-socket_type.h-from-eglibc.patch
+file
+
+
+
+add
+
+uclibc-0053-libc-elf-explicitly-include-uClibc_page.h-to-make-PA.patch
+file
+
+
+
+add
+
+uclibc-0029-inet-rpc-fix-build-in-NPTL-case.patch
+file
+
+
+
+add
+
+uclibc-0008-arm-move-check-for-BX-to-its-own-header.patch
+file
+
+
+
+add
+
+uclibc-0043-buildsys-Add-missing-SYMBOL_PREFIX-to-symbol-names.patch
+file
+
+
+
+add
+
+uclibc-0001-bits-time.h-sync-with-glibc-2.16.patch
+file
+
+
+
+add
+
+uclibc-0049-Fix-some-fragileness-in-dlopen-do_dlopen-wrapper-wor.patch
+file
+
+
+
+add
+
+uclibc-0018-ldso-include-dlfcn.h-for-RTLD_NODELETE.patch
+file
+
+
+
+add
+
+uclibc-0003-Add-dup3-syscall.patch
+file
+
+
+
+add
+
+uclibc-0012-libc-stdlib-add-mkostemp-helpers.patch
+file
+
+
+
+add
+
+uclibc-0020-update-ptrace.h-to-latest-from-glibc.patch
+file
+
+
+
+add
+
+uclibc-0013-eventfd-Implement-eventfd2-and-fix-eventfd.patch
+file
+
+
+
+add
+
+uclibc-0005-Patch-from-OpenWRT-for-avr32.patch
+file
+
+
+
+add
+
+uclibc-0019-include-elf.h-update-for-ELFOSABI_-changes.patch
+file
+
+
+
+add
+
+uclibc-0022-inet-rpc-fix-authnone_marshal-in-multithreading-cont.patch
+file
+
+
+
+add
+
+uclibc-0040-mman-rename-MAP_UNINITIALIZE-to-MAP_UNINITIALIZED.patch
+file
+
+
+
+add
+
+uclibc-0050-libdl-fix-dlopen-implementation-from-statically-link.patch
+file
+
+
+
+add
+
+uclibc-0044-inet-do-not-filter-responses-in-res_query.patch
+file
+
+
+
+add
+
+uclibc-0028-dl-fix-dlsym-lookups-with-RTLD_NEXT.patch
+file
+
+
+
+add
+
+uclibc-0027-i386-bits-syscalls.h-allow-immediate-values-as-6th-s.patch
+file
+
+
+
+add
+
+uclibc-0017-librt-re-add-SIGCANCEL-to-the-list-of-blocked-signal.patch
+file
+
+
+
+add
+
+uclibc-0052-libubacktrace-fix-build-due-to-some-typos.patch
+file
+
+
+
+add
+
+uclibc-0026-make-NPTL-s-getpid-behave-similar-to-the-common-one.patch
+file
+
+
+
+add
+
+uclibc-0004-libc-sysdeps-add-__kernel_long-and-__kernel_ulong.patch
+file
+
+
+
+add
+
+uclibc-0038-libc-sysdeps-sync-bits-in.h-with-glibc.patch
+file
+
+
+
+add
+
+uclibc-0023-MIPS-Convert-__syscall_error-callers-to-use-a0-for-a.patch
+file
+
+
+
+add
+
+uclibc-0011-libc-add-non-standard-execvpe-function.patch
+file
+
+
+
+add
+
+uclibc-0048-Fix-a-problem-with-scanning-wide-chars.patch
+file
+
+
+
+add
+
+uclibc-0039-libc-atexit-reuse-free-slots-at-the-end-of-exit-func.patch
+file
+
+
+
+add
+

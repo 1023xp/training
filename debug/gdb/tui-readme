@@ -1,0 +1,24 @@
+(1) 打开TUI模式
+方法一: 使用‘gdbtui’ or ‘gdb-tui’开始一个调试
+$ gdbtui -q sample
+(gdb) ....
+方法二: 使用切换键 `ctrl+x ctrl+a` or `ctrl+x A`
+(2) TUI模式下有4个窗口,
+command 命令窗口. 可以键入调试命令
+source 源代码窗口. 显示当前行,断点等信息
+assembly 汇编代码窗口
+register 寄存器窗口
+除command 窗口外,其他三个窗口不可同时显示.其可用 layout 命令来进行选择
+自己需要的窗口. 可参见 `help layout` .
+(3) 设置TUI
+set tui border-kind kind
+Select the border appearance for the source, assembly and register windows.
+The possible values are the following:
+space: Use a space character to draw the border.
+ascii: Use ascii characters ‘+’, ‘-’ and ‘|’ to draw the border.
+acs Use the Alternate Character Set to draw the border. The
+border is
+drawn: using character line graphics if the terminal supports them.
+(4) 更详尽的说明
+http://sourceware.org/gdb/current/onlinedocs/gdb_23.html#SEC235.
+

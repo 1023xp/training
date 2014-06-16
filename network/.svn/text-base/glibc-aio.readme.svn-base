@@ -1,0 +1,27 @@
+undefined reference to `aio_write64':
+librt 是glibc对linux下的real-time系统调用的支持接口
+封装的函数包括异步I/O，计时器，共享内存等：
+
+aio_cancel(GLIBC_2.1)[2] aio_suspend(GLIBC_2.1)[2] lio_listio64(GLIBC_2.1)[1] aio_cancel64(GLIBC_2.1)[1] aio_suspend64(GLIBC_2.1)[1] shm_open(GLIBC_2.1)[2] aio_error(GLIBC_2.1)[2] aio_write(GLIBC_2.1)[2] shm_unlink(GLIBC_2.1)[2] aio_error64(GLIBC_2.1)[1] aio_write64(GLIBC_2.1)[1] timer_create(GLIBC_2.1)[2] aio_fsync(GLIBC_2.1)[2] clock_getcpuclockid(GLIBC_2.1)[2] timer_delete(GLIBC_2.1)[2] aio_fsync64(GLIBC_2.1)[1] clock_getres(GLIBC_2.1)[2] timer_getoverrun(GLIBC_2.1)[2] aio_read(GLIBC_2.1)[2] clock_gettime(GLIBC_2.1)[2] timer_gettime(GLIBC_2.1)[2] aio_read64(GLIBC_2.1)[1] clock_nanosleep(GLIBC_2.1)[2] timer_settime(GLIBC_2.1)[2] aio_return(GLIBC_2.1)[2] clock_settime(GLIBC_2.1)[2] aio_return64(GLIBC_2.1)[1] lio_listio(GLIBC_2.1)[2]
+
+当程序中使用到上述函数时， 除要包含相应的头文件，在链接时要引用该库文件：
+     gcc sample.c -lrt 
+
+其中，struct aiocb主要包含以下字段：
+int               aio_fildes;        /* 要被读写的fd */
+void *            aio_buf;           /* 读写操作对应的内存buffer */
+__off64_t         aio_offset;        /* 读写操作对应的文件偏移 */
+size_t            aio_nbytes;        /* 需要读写的字节长度 */
+int               aio_reqprio;       /* 请求的优先级 */
+struct sigevent   aio_sigevent;      /* 异步事件，定义异步操作完成时的通知信号或回调函数 */
+
+glibc的aio实现：
+1、异步请求被提交到request_queue中；
+2、request_queue实际上是一个表结构，"行"是fd、"列"是具体的请求。也就是说，同一个fd的请求会被组织在一起；
+3、异步请求有优先级概念，属于同一个fd的请求会按优先级排序，并且最终被按优先级顺序处理；
+4、随着异步请求的提交，一些异步处理线程被动态创建。这些线程要做的事情就是从request_queue中取出请求，然后处理之；
+5、为避免异步处理线程之间的竞争，同一个fd所对应的请求只由一个线程来处理；
+6、异步处理线程同步地处理每一个请求，处理完成后在对应的aiocb中填充结果，然后触发可能的信号通知或回调函数（回调函数是需要创建新线程来调用的）；
+7、异步处理线程在完成某个fd的所有请求后，进入闲置状态；
+8、异步处理线程在闲置状态时，如果request_queue中有新的fd加入，则重新投入工作，去处理这个新fd的请求（新fd和它上一次处理的fd可以不是同一个）；
+9、异步处理线程处于闲置状态一段时间后（没有新的请求），则会自动退出。等到再有新的请求时，再去动态创建；

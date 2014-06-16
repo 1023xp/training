@@ -1,0 +1,6 @@
+test: main.o add.o
+	$(CC) $(CFLAGS) -o $@ $^
+#忽略命令的出错，我们可以在Makefile的命令行前加一个减号“-”（在Tab键之后），标记为不管命令出不出错都认为是成功
+clean:
+	-rm *.o
+	-rm test

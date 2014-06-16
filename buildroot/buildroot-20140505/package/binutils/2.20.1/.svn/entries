@@ -1,0 +1,70 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/binutils/2.20.1
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+300-001_ld_makefile_patch.patch
+file
+
+
+
+add
+
+400-arm_link_speed.patch
+file
+
+
+
+add
+
+120-sh-conf.patch
+file
+
+
+
+add
+
+110-arm-eabi-conf.patch
+file
+
+
+
+add
+
+300-012_check_ldrunpath_length.patch
+file
+
+
+
+add
+
+500-sysroot.patch
+file
+
+
+
+add
+

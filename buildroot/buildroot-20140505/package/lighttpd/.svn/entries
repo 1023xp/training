@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/lighttpd
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+lighttpd.service
+file
+
+
+
+add
+
+lighttpd-01-Fix-default-config-file.patch
+file
+
+
+
+add
+
+lighttpd.mk
+file
+
+
+
+add
+
+S50lighttpd
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

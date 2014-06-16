@@ -1,0 +1,24 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.59)
+AC_INIT(test, 1.0, normalnotebook@126.com)
+AC_CONFIG_SRCDIR([src/ModuleA/apple/core/test.c])
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(test,1.0)
+
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+AC_PROG_RANLIB
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+AC_OUTPUT([Makefile
+		src/lib/Makefile
+		src/ModuleA/apple/core/Makefile
+		src/ModuleA/apple/shell/Makefile
+		])

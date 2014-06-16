@@ -1,0 +1,11 @@
+You can watch system wide major page faults like so:
+
+watch -n 1 grep pgmajfault /proc/vmstat
+
+You can watch the major page faults of a process like so:
+
+watch -n 1 ‘cut -f12 -d” “ /proc/<PID>/stat’
+
+You can also watch the resident set size, and process size for a process with:
+
+watch -n 1 “egrep ‘VmRSS|VmSize’ /proc/<PID>/status”

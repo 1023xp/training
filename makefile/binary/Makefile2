@@ -1,0 +1,11 @@
+test: main.o add.o
+	gcc -o test main.o add.o
+
+#“$<”表示规则中的第一个依赖文件,
+#“$@”表示规则中的目标文件
+%.o: %.c
+	gcc -c -o $@ $<
+
+clean:
+	rm *.o
+	rm test

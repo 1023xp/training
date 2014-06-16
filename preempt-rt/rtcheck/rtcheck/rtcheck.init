@@ -1,0 +1,66 @@
+#!/bin/bash
+#
+# © Copyright IBM Corp. 2008, 2010.  All Rights Reserved.
+# Author: Vernon Mauery <vernux@us.ibm.com>
+#
+### BEGIN INIT INFO
+# Provides: rtcheck
+# Required-Start: $local_fs $remote_fs
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Run rtcheck system tests
+# Description: rtcheck checks if the system is Real Time capable.
+#              A run at boot time by root caches all user independent
+#              tests to increase performance at run time.
+#
+### END INIT INFO
+
+
+# source function library
+. /lib/lsb/init-functions
+
+RETVAL=0
+RTCHECKLOG=/var/log/rtcheck
+
+start() {
+	echo -n "Checking if system is Real Time capable: "
+
+	touch "$RTCHECKLOG" 2>/dev/null || RTCHECKLOG="/dev/null"
+	/usr/bin/rtcheck -v > "$RTCHECKLOG"
+	RETVAL=$?
+
+	# because this is for global tests only,
+	# return of 1 or 0 is acceptable
+	# 0 => all tests passed
+	# 1 => memlock (per-user-test) failed
+	if [ "$RETVAL" -eq 1 ] || [ "$RETVAL" -eq 0 ]; then
+		log_success_msg
+	else
+		log_failure_msg
+	fi
+}
+
+stop() {
+	# reset rtcheck's system cache
+	rm -f "$RTCHECKLOG"
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		stop
+		start
+		;;
+	*)
+		echo $"Usage: $0 {start|stop|restart}"
+		exit 1
+		;;
+esac
+
+exit $RETVAL

@@ -1,0 +1,98 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/linux-pam
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+linux-pam-07-rhosts.patch
+file
+
+
+
+add
+
+linux-pam-04-mkdir.patch
+file
+
+
+
+add
+
+other.pam
+file
+
+
+
+add
+
+linux-pam-02-doc-makefile-am.patch
+file
+
+
+
+add
+
+linux-pam.mk
+file
+
+
+
+add
+
+linux-pam-03-group.patch
+file
+
+
+
+add
+
+linux-pam-05-succeed.patch
+file
+
+
+
+add
+
+linux-pam-01-configure.patch
+file
+
+
+
+add
+
+linux-pam-06-time.patch
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

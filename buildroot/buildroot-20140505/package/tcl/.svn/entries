@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/tcl
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+tcl.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+tcl-0001-dont-build-compat.patch
+file
+
+
+
+add
+

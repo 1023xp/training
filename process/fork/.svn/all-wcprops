@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/264/trunk/training/process/fork
+END
+clone.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/180/trunk/training/process/fork/clone.c
+END
+fork_fork.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/181/trunk/training/process/fork/fork_fork.c
+END
+fork_child.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/177/trunk/training/process/fork/fork_child.c
+END
+vfork.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/284/trunk/training/process/fork/vfork.c
+END
+clone_thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/179/trunk/training/process/fork/clone_thread.c
+END
+fork_bomb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/277/trunk/training/process/fork/fork_bomb.sh
+END
+fork_parent.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/177/trunk/training/process/fork/fork_parent.c
+END

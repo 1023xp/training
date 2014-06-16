@@ -1,0 +1,8 @@
+1. coredump: training/debug/core-dump
+2. strace/ltrace
+3. gdb: gdb attach pid
+4. Makefile:training/makefile/binary
+   training/autoconf-automake/selfdefined-makefile
+5. shell: training/shell
+6. objdump disassemble
+7. valgrind: training/memory_check/valgrind

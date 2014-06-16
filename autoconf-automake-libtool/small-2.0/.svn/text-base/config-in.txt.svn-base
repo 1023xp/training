@@ -1,0 +1,259 @@
+Now that I have some code, I can run autoscan to generate a preliminary
+`configure.in'. autoscan will examine all of the sources in the current directory tree looking for common points of non-portability, adding macros suitable for detecting the discovered problems. autoscan generates the following in `configure.scan':
+
+
+# Process this file with autoconf to produce a configure script.
+AC_INIT(sic/eval.h)
+
+# Checks for programs.
+
+# Checks for libraries.
+
+# Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(strings.h unistd.h)
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_TYPE_SIZE_T
+
+# Checks for library functions.
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(strerror)
+
+AC_OUTPUT()
+
+    Since the generated `configure.scan' does not overwrite your project's `configure.in', it is a good idea to run autoscan periodically even in established project source trees, and compare the two files. Sometimes autoscan will find some portability issue you have overlooked, or weren't aware of. 
+
+Looking through the documentation for the macros in this `configure.scan',
+AC_C_CONST and AC_TYPE_SIZE_T will take care of themselves (provided I ensure that `config.h' is included into every source file), and AC_HEADER_STDC and AC_CHECK_HEADERS(unistd.h) are already taken care of in `common.h'.
+
+autoscan is no silver bullet! Even here in this simple example, I need to manually add macros to check for the presence of `errno.h':
+
+ 	
+
+AC_CHECK_HEADERS(errno.h strings.h unistd.h)
+
+I also need to manually add the Autoconf macro for generating `config.h'; a macro to initialise automake support; and a macro to check for the presence of ranlib. These should go close to the start of `configure.in':
+
+ 	
+
+...
+AC_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(sic, 0.5)
+
+AC_PROG_CC
+AC_PROG_RANLIB
+...
+
+Recall that the use of bzero in 9.2.1.2 Memory Management is not entirely portable. The trick is to provide a bzero work-alike, depending on which functions Autoconf detects, by adding the following towards the end of `configure.in':
+
+ 	
+
+...
+AC_CHECK_FUNCS(bzero memset, break)
+...
+
+With the addition of this small snippet of code to `common.h', I can now make use of bzero even when linking with a C library that has no implementation of its own:
+
+ 	
+
+#if !HAVE_BZERO && HAVE_MEMSET
+# define bzero(buf, bytes)      ((void) memset (buf, 0, bytes))
+#endif
+
+
+An interesting macro suggested by autoscan is AC_CHECK_FUNCS(strerror). This tells me that I need to provide a replacement implementation of strerror for the benefit of architectures which don't have it in their system libraries. This is resolved by providing a file with a fallback implementation for the named function, and creating a library from it and any others that `configure' discovers to be lacking from the system library on the target host.
+
+You will recall that `configure' is the shell script the end user of this package will run on their machine to test that it has all the features the package wants to use. The library that is created will allow the rest of the project to be written in the knowledge that any functions required by the project but missing from the installers system libraries will be available nonetheless. GNU `libiberty' comes to the rescue again -- it already has an implementation of `strerror.c' that I was able to use with a little modification.
+
+Being able to supply a simple implementation of strerror, as the `strerror.c' file from `libiberty' does, relies on there being a well defined sys_errlist variable. It is a fair bet that if the target host has no strerror implementation, however, that the system sys_errlist will be broken or missing. I need to write a configure macro to check whether the system defines sys_errlist, and tailor the code in `strerror.c' to use this knowledge.
+
+To avoid clutter in the top-level directory, I am a great believer in keeping as many of the configuration files as possible in their own sub-directory. First of all, I will create a new directory called `config' inside the top-level directory, and put `sys_errlist.m4' inside it:
+
+ 	
+
+AC_DEFUN([SIC_VAR_SYS_ERRLIST],
+[AC_CACHE_CHECK([for sys_errlist],
+sic_cv_var_sys_errlist,
+[AC_TRY_LINK([int *p;], [extern int sys_errlist; p = &sys_errlist;],
+            sic_cv_var_sys_errlist=yes, sic_cv_var_sys_errlist=no)])
+if test x"$sic_cv_var_sys_errlist" = xyes; then
+  AC_DEFINE(HAVE_SYS_ERRLIST, 1,
+    [Define if your system libraries have a sys_errlist variable.])
+fi])
+
+
+I must then add a call to this new macro in the `configure.in' file being careful to put it in the right place -- somewhere between typedefs and structures and library functions according to the comments in `configure.scan':
+
+ 	
+
+SIC_VAR_SYS_ERRLIST
+
+GNU Autotools can also be set to store most of their files in a subdirectory, by calling the AC_CONFIG_AUX_DIR macro near the top of `configure.in', preferably right after AC_INIT:
+
+ 	
+
+AC_INIT(sic/eval.c)
+AC_CONFIG_AUX_DIR(config)
+AM_CONFIG_HEADER(config.h)
+...
+
+Having made this change, many of the files added by running autoconf and automake --add-missing will be put in the aux_dir.
+
+The source tree now looks like this:
+
+ 	
+
+sic/
+  +-- configure.scan
+  +-- config/
+  |     +-- sys_errlist.m4
+  +-- replace/
+  |     +-- strerror.c
+  +-- sic/
+        +-- builtin.c
+        +-- builtin.h
+        +-- common.h
+        +-- error.c
+        +-- error.h
+        +-- eval.c
+        +-- eval.h
+        +-- list.c
+        +-- list.h
+        +-- sic.c
+        +-- sic.h
+        +-- syntax.c
+        +-- syntax.h
+        +-- xmalloc.c
+        +-- xstrdup.c
+        +-- xstrerror.c
+
+In order to correctly utilise the fallback implementation, AC_CHECK_FUNCS(strerror) needs to be removed and strerror added to AC_REPLACE_FUNCS:
+
+ 	
+
+# Checks for library functions.
+AC_REPLACE_FUNCS(strerror)
+
+This will be clearer if you look at the `Makefile.am' for the `replace' subdirectory:
+
+ 	
+
+## Makefile.am -- Process this file with automake to produce Makefile.in
+
+INCLUDES                =  -I$(top_builddir) -I$(top_srcdir)
+
+noinst_LIBRARIES        = libreplace.a
+libreplace_a_SOURCES        = dummy.c
+libreplace_a_LIBADD        = @LIBOBJS@
+
+
+The code tells automake that I want to build a library for use within the build tree (i.e. not installed -- `noinst'), and that has no source files by default. The clever part here is that when someone comes to install Sic, they will run configure which will test for strerror, and add `strerror.o' to LIBOBJS if the target host environment is missing its own implementation. Now, when `configure' creates `replace/Makefile' (as I asked it to with AC_OUTPUT), `@LIBOBJS@' is replaced by the list of objects required on the installer's machine.
+
+Having done all this at configure time, when my user runs make, the files required to replace functions missing from their target machine will be added to `libreplace.a'.
+
+Unfortunately this is not quite enough to start building the project. First I need to add a top-level `Makefile.am' from which to ultimately create a top-level `Makefile' that will descend into the various subdirectories of the project:
+
+ 	
+
+## Makefile.am -- Process this file with automake to produce Makefile.in
+
+SUBDIRS = replace sic
+
+And `configure.in' must be told where it can find instances of Makefile.in:
+
+ 	
+
+AC_OUTPUT(Makefile replace/Makefile sic/Makefile)
+
+I have written a bootstrap script for Sic, for details see 8. Bootstrapping:
+
+ 	
+
+#! /bin/sh
+
+autoreconf -fvi
+
+
+The `--foreign' option to automake tells it to relax the GNU standards for various files that should be present in a GNU distribution. Using this option saves me from having to create empty files as we did in 5. A Minimal GNU Autotools Project.
+
+Right. Let's build the library! First, I'll run bootstrap:
+
+ 	
+
+$ ./bootstrap
++ aclocal -I config
++ autoheader
++ automake --foreign --add-missing --copy
+automake: configure.in: installing config/install-sh
+automake: configure.in: installing config/mkinstalldirs
+automake: configure.in: installing config/missing
++ autoconf
+
+The project is now in the same state that an end-user would see, having unpacked a distribution tarball. What follows is what an end user might expect to see when building from that tarball:
+
+ 	
+
+$ ./configure
+creating cache ./config.cache
+checking for a BSD compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking whether make sets ${MAKE}... yes
+checking for working aclocal... found
+checking for working autoconf... found
+checking for working automake... found
+checking for working autoheader... found
+checking for working makeinfo... found
+checking for gcc... gcc
+checking whether the C compiler (gcc  ) works... yes
+checking whether the C compiler (gcc  ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking for ranlib... ranlib
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for unistd.h... yes
+checking for errno.h... yes
+checking for string.h... yes
+checking for working const... yes
+checking for size_t... yes
+checking for strerror... yes
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating replace/Makefile
+creating sic/Makefile
+creating config.h
+
+Compare this output with the contents of `configure.in', and notice how each macro is ultimately responsible for one or more consecutive tests (via the Bourne shell code generated in `configure'). Now that the `Makefile's have been successfully created, it is safe to call make to perform the actual compilation:
+
+ 	
+$ make
+make  all-recursive
+make[1]: Entering directory `/tmp/sic'
+Making all in replace
+make[2]: Entering directory `/tmp/sic/replace'
+rm -f libreplace.a
+ar cru libreplace.a
+ranlib libreplace.a
+make[2]: Leaving directory `/tmp/sic/replace'
+Making all in sic
+make[2]: Entering directory `/tmp/sic/sic'
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c builtin.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c error.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c eval.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c list.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c sic.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c syntax.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c xmalloc.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c xstrdup.c
+gcc -DHAVE_CONFIG_H -I. -I. -I.. -I..    -g -O2 -c xstrerror.c
+rm -f libsic.a
+ar cru libsic.a builtin.o error.o eval.o list.o sic.o syntax.o xmalloc.o
+xstrdup.o xstrerror.o
+ranlib libsic.a
+make[2]: Leaving directory `/tmp/sic/sic'
+make[1]: Leaving directory `/tmp/sic'
+
+On this machine, as you can see from the output of configure above, I have no need of the fallback implementation of strerror, so `libreplace.a' is empty. On another machine this might not be the case. In any event, I now have a compiled `libsic.a' -- so far, so good. 

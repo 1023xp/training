@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/gamin
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+Config.in
+file
+
+
+
+add
+
+gamin-0.1.10-no-const-return.patch
+file
+
+
+
+add
+
+gamin.mk
+file
+
+
+
+add
+
+gamin-0.1.10-no-abstract-sockets.patch
+file
+
+
+
+add
+

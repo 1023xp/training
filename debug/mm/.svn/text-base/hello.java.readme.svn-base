@@ -1,0 +1,6 @@
+# javac Test1.java
+# javac Hello.java
+# java Test1
+
+Test1 is the parent process of Hello.
+

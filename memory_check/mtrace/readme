@@ -1,0 +1,115 @@
+mtrace
+
+mtrace is the memory debugger included in the GNU C Library.
+Contents
+
+    1 Use
+    2 Usage example
+        2.1 Bad Source Code
+        2.2 MTrace Usage
+        2.3 MTrace Output
+        2.4 Good Source Code
+    3 See also
+    4 External links
+
+Use
+
+The function mtrace installs handlers for malloc, realloc and free; the function muntrace disables these handlers. Their prototypes, defined in the header file mcheck.h, are
+
+void mtrace(void);
+
+void muntrace(void);
+
+The handlers log all memory allocations and frees to a file defined by the environment variable MALLOC_TRACE (if the variable is unset, describes an invalid filename, or describes a filename the user does not have permissions to, the handlers are not installed).
+
+A perl script called mtrace, not to be confused with the function of the same name, is also distributed with the GNU C Library; the script parses through the output file and reports all allocations that were not freed.
+Usage example
+Bad Source Code
+
+The following is an example of bad source code. The problem with the program is that it allocates memory, but doesn’t free the memory before exiting.
+
+#include <stdlib.h>
+ 
+int main(void) { 
+ 
+        int * a;
+ 
+        a = malloc(sizeof(int)); /* allocate memory and assign it to the pointer */
+ 
+        return 0; /* we exited the program without freeing memory */
+ 
+        /* we should have released the allocated memory with the statement “free(a)” */
+ 
+}
+
+MTrace Usage
+
+1. Set the environment variable MALLOC_TRACE to the pathname of the desired output file. Setting environment variables is slightly different in each shell. In Bourne Shell-compatible shells, like Bash, the command is as follows:
+
+MALLOC_TRACE=/home/YourUserName/path/to/program/MallocTraceOutputFile.txt
+export MALLOC_TRACE;
+
+2. Include mcheck.h in the source code. This is done, for example, by adding the following line to the top of a C or C++ file, as shown below:
+
+#include <mcheck.h>
+
+3. Call the function mtrace() before you start allocating memory. It is usually easiest to call mtrace() at the very beginning of the main() function:
+
+mtrace();
+
+To delineate the end of the code that should be traced, call the function muntrace(). This is usually done at the end of the main() function:
+
+muntrace();
+
+4. Compile and run the program as usual. Note that you need to compile with the -g option to get useful output. In GCC on Linux, this can be done using the following commands for a C program:
+
+gcc yourProgram.c -g
+./a.out
+
+5. Memory leak information will be reported in the file specified by the MALLOC_TRACE environment variable. The difficulty is, this file will be in a computer-readable format. Most Linux machines come with a console command called mtrace, that converts the computer readable format into human-readable text as shown below. If you do not have access to this console command, there is a Perl script, of the same name, that can be downloaded to accomplish the same task. The mtrace syntax is as follows:
+
+mtrace <exec_file_name> <malloc_trace_filename> 
+
+For example:
+
+mtrace a.out MallocTraceOutputFile.txt
+
+6. mtrace can be used with parallel computing but one process at a time, using a condition on the rank like:
+
+if (my_rank==0) mtrace();
+
+MTrace Output
+
+If the mtrace command reports “No Memory Leaks”, then all memory that was allocated in the last execution of that program was also released, which is the way it should be. If, on the other hand, mtrace gives output such as that below, it means the programmer still has some work to do.
+
+Memory not freed:
+-----------------
+   Address     Size     Caller
+0x08049910      0x4  at /home/sureshsathiah/tips/leak.c:9
+
+Good Source Code
+
+The following is an example of good source code. It releases memory after it is allocated, and it uses mtrace to notify the programmer if there are memory leaks.
+
+#include <stdlib.h>
+#include <mcheck.h>
+ 
+int main(void) { 
+ 
+        mtrace(); /* Starts the recording of memory allocations and releases */
+ 
+        int* a = NULL;
+ 
+        a = malloc(sizeof(int)); /* allocate memory and assign it to the pointer */
+        if (a == NULL) {
+                return 1; /* error */
+        }
+ 
+        free(a); /* we free the memory we allocated so we don't have leaks */
+        muntrace();
+ 
+        return 0; /* exit */
+ 
+}
+
+

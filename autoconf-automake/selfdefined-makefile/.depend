@@ -1,0 +1,5 @@
+main.o: main/main.c main/aa.h
+init1.o: init/init1.c
+init2.o: init/init2.c
+init3.o: init/init3.c
+init4.o: init/init4.c

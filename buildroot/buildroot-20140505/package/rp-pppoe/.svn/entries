@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/rp-pppoe
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+rp-pppoe-3.10-002-krn-plugin.patch
+file
+
+
+
+add
+
+rp-pppoe.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

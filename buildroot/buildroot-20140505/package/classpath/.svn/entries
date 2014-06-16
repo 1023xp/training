@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/classpath
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+classpath-02-add-config-rpath.patch
+file
+
+
+
+add
+
+classpath-01-fix-gmp-include.patch
+file
+
+
+
+add
+
+classpath.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

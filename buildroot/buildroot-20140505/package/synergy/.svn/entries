@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/synergy
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+synergy-1.3.1-remove-werror.patch
+file
+
+
+
+add
+
+synergy.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+synergy-1.3.1-includes.patch
+file
+
+
+
+add
+

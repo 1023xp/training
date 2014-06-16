@@ -1,0 +1,23 @@
+        -:    0:Source:test.c
+        -:    0:Graph:test.gcno
+        -:    0:Data:test.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        1:    3:int main (void)
+        -:    4:{
+        -:    5:	int i, total;
+        -:    6:
+        1:    7:	total = 0;
+        -:    8:
+       11:    9:	for (i = 0; i < 10; i++)
+       10:   10:		total += i;
+        -:   11:
+        1:   12:	if (total != 45)
+    #####:   13:		printf ("Failure\n");
+        -:   14:	else
+        1:   15:		printf ("Success\n");
+        1:   16:	return 0;
+        -:   17:}
+        -:   18:

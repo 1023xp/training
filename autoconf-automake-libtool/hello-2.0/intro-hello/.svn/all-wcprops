@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/hello-2.0/intro-hello
+END
+hello.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/hello-2.0/intro-hello/hello.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/hello-2.0/intro-hello/main.c
+END
+trim.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/hello-2.0/intro-hello/trim.c
+END

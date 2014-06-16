@@ -1,0 +1,42 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board/calao/tny-a9g20-lpw
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+at91bootstrap-1.16-tny-a9g20-lpw.patch
+file
+
+
+
+add
+
+linux-3.9.config
+file
+
+
+
+add
+

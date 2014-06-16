@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/qtuio
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+qtuio-dont-append-_d-for-debug.patch
+file
+
+
+
+add
+
+qtuio-TuioServer.cpp-add-missing-include.patch
+file
+
+
+
+add
+
+qtuio.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

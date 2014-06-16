@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/264/trunk/training/debug/core-dump
+END
+core
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/286/trunk/training/debug/core-dump/core
+END
+exam
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/160/trunk/training/debug/core-dump/exam
+END
+exam.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/137/trunk/training/debug/core-dump/exam.c
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/137/trunk/training/debug/core-dump/readme
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/219/trunk/training/kernel/drivers/globalmem/ch7
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/167/trunk/training/kernel/drivers/globalmem/ch7/Makefile
+END
+globalmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/266/trunk/training/kernel/drivers/globalmem/ch7/globalmem.c
+END

@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/samba4
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+samba4-0002-build-don-t-execute-statfs-and-f_fsid-checks.patch
+file
+
+
+
+add
+
+samba4-0005-builtin-heimdal-external-tools.patch
+file
+
+
+
+add
+
+samba4-0009-build-make-wafsamba-CHECK_SIZEOF-cross-compile-friendl.patch
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+samba4-0001-build-don-t-execute-tests-summary.c.patch
+file
+
+
+
+add
+
+samba4.mk
+file
+
+
+
+add
+
+samba4-0003-build-find-FILE_OFFSET_BITS-via-array.patch
+file
+
+
+
+add
+
+S91smb
+file
+
+
+
+add
+
+samba4-0008-build-unify-and-fix-endian-tests.patch
+file
+
+
+
+add
+
+samba4-0004-build-allow-some-python-variable-overrides.patch
+file
+
+
+
+add
+
+samba4-0007-build-find-blkcnt_t-size-via-array.patch
+file
+
+
+
+add
+
+samba4-0010-build-tweak-SIZEOF-utmp-ut_line.patch
+file
+
+
+
+add
+
+samba4-cache.txt
+file
+
+
+
+add
+

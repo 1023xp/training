@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/vlc
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+vlc.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+vlc-0002-configure.ac-add-check-for-libgcrypt-config-program.patch
+file
+
+
+
+add
+
+vlc-0003-automake-add-subdir-objects-option.patch
+file
+
+
+
+add
+
+vlc-0001-fix-link-error.patch
+file
+
+
+
+add
+

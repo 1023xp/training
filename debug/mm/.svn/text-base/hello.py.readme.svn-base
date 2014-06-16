@@ -1,0 +1,19 @@
+$ echo 3 | sudo tee /proc/sys/vm/drop_caches 
+3
+
+$ time python ./hello.py 
+Hello World! Love, Python
+
+real	0m1.414s
+user	0m0.004s
+sys	0m0.084s
+
+$ time python ./hello.py 
+Hello World! Love, Python
+
+real	0m0.024s
+user	0m0.012s
+sys	0m0.012s
+
+All your apps get this boost automatically! 
+

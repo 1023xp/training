@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board/calao/qil-a9260
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+linux-3.4.7.config
+file
+
+
+
+add
+
+at91bootstrap-1.16-qil-a9260.patch
+file
+
+
+
+add
+
+linux-3.4.7.patch
+file
+
+
+
+add
+
+barebox-2012.07.0-qil-a9260.patch
+file
+
+
+
+add
+

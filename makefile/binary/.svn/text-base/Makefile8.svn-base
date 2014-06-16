@@ -1,0 +1,25 @@
+#所有的源文件--  .c文件列表
+SRCS = $(wildcard *.c)
+#
+#所有的.o文件列表
+OBJS =$(SRCS:.c=.o)
+
+test: $(OBJS)
+	gcc -o $@ $^
+
+$(OBJS) : %.o: %.c
+	$(CC) -c $< -o $@
+
+#针对每个.c文件的.d依赖文件列表
+DEPS = $(SRCS:.c=.d)
+
+$(DEPS) : %.d : %.c
+	gcc -MM $< > $@
+
+include $(DEPS)
+
+#忽略命令的出错，我们可以在Makefile的命令行前加一个减号“-”（在Tab键之后），标记为不管命令出不出错都认为是成功
+clean:
+	-rm *.o
+	-rm test
+	-rm *.d

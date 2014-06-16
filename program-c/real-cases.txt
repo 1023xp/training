@@ -1,0 +1,51 @@
+bitorder/byteorder:
+tcp/ip packet head picture
+
+naming/namespace:
+i2c subsystem
+every i2c controller
+
+comments:
+1. sirfsoc_of_pwrc_init
+2. 
+#define X_ON_KEY_B (1 << 0)
+         sirfsoc_rtc_iobrg_writel(pwr_trigger_en_reg | X_ON_KEY_B,
+                   sirfsoc_pwrc_base + SIRFSOC_PWRC_TRIGGER_EN);
+
+performance:
+internal ram: fast link
+interrupt: spi threshold /per-byte interrupt
+
+
+A reentrant function:
+thread & async safe
+
+module:
+internal headfile, external headfile
+project dir...
+module based on real world, not hardware. an keyboard/lcd integrated hardware, t
+wo modules
+init flow, register things instead of checking things.
+top down, gpio registers and gpio resource protections
+seperate gpio/pinmux modules instead of reading/writing gpio registers
+seperate board resource/touchpanel/ethernet driver(cs8900)
+
+oo:
+encapsulation
+button -> menu ->  window
+bmp head
+irqchip
+gpiochip
+...
+
+Inherit:
+direct use/bottom layer cover core level/replace a part
+
+Split i2c host/client/i2c core
+
+function:
+aligned_malloc(64) as api
+
+code review:
+gerrit
+mail loop

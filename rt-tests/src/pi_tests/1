@@ -1,0 +1,54 @@
+execve("./classic_pi", ["./classic_pi"], [/* 39 vars */]) = 0
+brk(0)                                  = 0x8ab6000
+uname({sys="Linux", node="barry-VirtualBox", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb78af000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=75094, ...}) = 0
+mmap2(NULL, 75094, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb789c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/libpthread.so.0", O_RDONLY)  = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\360L\0\0004\0\0\0"..., 512) = 512
+fstat64(3, {st_mode=S_IFREG|0755, st_size=121578, ...}) = 0
+mmap2(NULL, 102920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5000
+mprotect(0x80a000, 4096, PROT_NONE)     = 0
+mmap2(0x80b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15) = 0x80b000
+mmap2(0x80d000, 4616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x80d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/libc.so.6", O_RDONLY)        = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0@n\1\0004\0\0\0"..., 512) = 512
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1421892, ...}) = 0
+mmap2(NULL, 1427880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x19a000
+mmap2(0x2f1000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x157) = 0x2f1000
+mmap2(0x2f4000, 10664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2f4000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb789b000
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb789a000
+set_thread_area({entry_number:-1 -> 6, base_addr:0xb789a6c0, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+mprotect(0x2f1000, 8192, PROT_READ)     = 0
+mprotect(0x80b000, 4096, PROT_READ)     = 0
+mprotect(0x804b000, 4096, PROT_READ)    = 0
+mprotect(0x160000, 4096, PROT_READ)     = 0
+munmap(0xb789c000, 75094)               = 0
+set_tid_address(0xb789a728)             = 2259
+set_robust_list(0xb789a730, 0xc)        = 0
+futex(0xbffeb9f0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0xbffeb9f0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, bffeba00) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x7f96e0, [], SA_RESTORER|SA_SIGINFO, 0x803ad0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f9bc0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x803ad0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+uname({sys="Linux", node="barry-VirtualBox", ...}) = 0
+futex(0xbffeb978, FUTEX_UNLOCK_PI, 0)   = -1 EPERM (Operation not permitted)
+sched_getaffinity(0, 128, {f})          = 4
+sched_getaffinity(2259, 128, {f})       = 4
+sched_setaffinity(0, 128, {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}) = 0
+sched_get_priority_max(SCHED_FIFO)      = 99
+sched_setscheduler(2259, SCHED_FIFO, { 98 }) = -1 EPERM (Operation not permitted)
+write(2, "ERROR: ", 7ERROR: )                  = 7
+write(2, "main: boosting to max priority: "..., 36main: boosting to max priority: 0x1
+) = 36
+exit_group(0)                           = ?

@@ -1,0 +1,149 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/system/skeleton
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+home
+dir
+
+
+
+add
+
+var
+dir
+
+
+
+add
+
+sbin
+dir
+
+
+
+add
+
+mnt
+dir
+
+
+
+add
+
+tmp
+dir
+
+
+
+add
+
+opt
+dir
+
+
+
+add
+
+proc
+dir
+
+
+
+add
+
+run
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+svn:special
+
+lib
+dir
+
+
+
+add
+
+bin
+dir
+
+
+
+add
+
+usr
+dir
+
+
+
+add
+
+etc
+dir
+
+
+
+add
+
+dev
+dir
+
+
+
+add
+
+sys
+dir
+
+
+
+add
+
+media
+dir
+
+
+
+add
+
+root
+dir
+
+
+
+add
+

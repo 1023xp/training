@@ -1,0 +1,2 @@
+arm-linux-gnueabihf-gcc multi-add.c -O2 --std=c99
+arm-linux-gnueabihf-gcc restrict-exam.c -O2 --std=c99

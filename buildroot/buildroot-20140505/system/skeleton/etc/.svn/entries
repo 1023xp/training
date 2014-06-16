@@ -1,0 +1,186 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/system/skeleton/etc
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+network
+dir
+
+
+
+add
+
+inittab
+file
+
+
+
+add
+
+group
+file
+
+
+
+add
+
+random-seed
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+resolv.conf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+svn:special
+
+fstab
+file
+
+
+
+add
+
+hosts
+file
+
+
+
+add
+
+profile
+file
+
+
+
+add
+
+passwd
+file
+
+
+
+add
+
+services
+file
+
+
+
+add
+
+mtab
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+svn:special
+
+inputrc
+file
+
+
+
+add
+
+protocols
+file
+
+
+
+add
+
+shadow
+file
+
+
+
+add
+
+ld.so.conf.d
+dir
+
+
+
+add
+
+init.d
+dir
+
+
+
+add
+
+nsswitch.conf
+file
+
+
+
+add
+
+securetty
+file
+
+
+
+add
+
+issue
+file
+
+
+
+add
+

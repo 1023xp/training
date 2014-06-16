@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/Makefile.am
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/error.c
+END
+signal.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/signal.c
+END
+delay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/delay.cpp
+END
+inet_pton.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/inet_pton.c
+END
+inet_ntop.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/inet_ntop.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/Makefile.in
+END
+gettimeofday.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/gettimeofday.c
+END
+snprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/snprintf.c
+END
+headers_slim.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/headers_slim.h
+END
+string.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/string.c
+END
+Thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/231/trunk/training/autoconf-automake/iperf-2.0.5/compat/Thread.c
+END

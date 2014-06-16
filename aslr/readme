@@ -1,0 +1,34 @@
+proc/sys/kernel/randomize_va_space
+
+sysctl -n kernel.randomize_va_space
+
+barry@barry-VirtualBox:~/development/linux-2.6$ ldd `which col`
+	linux-gate.so.1 =>  (0xb771a000)
+	libc.so.6 => /lib/i386-linux-gnu/libc.so.6 (0xb755b000)
+	/lib/ld-linux.so.2 (0xb771b000)
+barry@barry-VirtualBox:~/development/linux-2.6$ ldd `which col`
+	linux-gate.so.1 =>  (0xb7760000)
+	libc.so.6 => /lib/i386-linux-gnu/libc.so.6 (0xb75a1000)
+	/lib/ld-linux.so.2 (0xb7761000)
+barry@barry-VirtualBox:~/development/linux-2.6$ ldd `which col`
+	linux-gate.so.1 =>  (0xb7791000)
+	libc.so.6 => /lib/i386-linux-gnu/libc.so.6 (0xb75d2000)
+	/lib/ld-linux.so.2 (0xb7792000)
+
+cat /proc/self/maps > 1.txt
+cat /proc/self/maps > 2.txt
+
+PIE最早由RedHat的人实现，他在连接起上增加了-pie选项，这样使用-fPIE编译的对象就能通过连接器得到位置无关可执行程序。fPIE和fPIC有些不同。可以参考Gcc和Open64中的-fPIC选项.
+
+gcc中的-fpic选项，使用于在目标机支持时，编译共享库时使用。编译出的代码将通过全局偏移表(Global Offset Table)中的常数地址访存，动态装载器将在程序开始执行时解析GOT表项(注意，动态装载器操作系统的一部分，连接器是GCC的一部分).而gcc中的-fPIC选项则是针对某些特殊机型做了特殊处理，比如适合动态链接并能避免超出GOT大小限制之类的错误。而Open64仅仅支持不会导致GOT表溢出的PIC编译。
+gcc中的-fpie和-fPIE选项和fpic及fPIC很相似，但不同的是，除了生成为位置无关代码外，还能假定代码是属于本程序。通常这些选项会和GCC链接时的-pie选项一起使用。fPIE选项仅能在编译可执行码时用，不能用于编译库。所以，如果想要PIE的程序，需要你除了在gcc增加-fPIE选项外，还需要在ld时增加-pie选项才能产生这种代码。即gcc -fpie -pie来编译程序。单独使用哪一个都无法达到效果。
+你可以使用file命令来查看当前的可执行文件是不是PIE的。
+
+下面是本博编译helloword的显示。可以看出，可执行文件属性从executable变成了shared object.
+$ gcc  helloworld.c
+$ file a.out
+a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, not stripped
+$ gcc -fpie -pie helloworld.c
+$ file a.out
+a.out: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, not stripped
+接下来，我们就能实验了，使用strace命令来查看这两个a.out执行情况了。

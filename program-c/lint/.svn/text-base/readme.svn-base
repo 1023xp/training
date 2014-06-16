@@ -1,0 +1,57 @@
+$ splint lint-exam.c +bounds +showconstraintlocation
+
+Command Line: Setting +showconFinished checking --- 10 code warnings
+value
+lint-exam.c: (in function foo)
+lint-exam.c:7:6: Test expression for if is assignment expression: i = 3
+  The condition test is an assignment expression. Probably, you mean to use ==
+  instead of =. If an assignment is intended, add an extra parentheses nesting
+  (e.g., if ((a = b)) ...) to suppress this message. (Use -predassign to
+  inhibit warning)
+lint-exam.c:7:6: Test expression for if not boolean, type int: i = 3
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+lint-exam.c:8:10: Return value type bool does not match declared type int: b1
+  Types are incompatible. (Use -type to inhibit warning)
+lint-exam.c:9:7: Operand of ! is non-boolean (int): !i
+  The operand of a boolean operator is not a boolean. Use +ptrnegate to allow !
+  to be used on pointers. (Use -boolops to inhibit warning)
+lint-exam.c:9:12: Right operand of || is non-boolean (char *): !i || s
+lint-exam.c:13:6: Use of == with boolean variables (risks inconsistency because
+                     of multiple true values): b1 == b2
+  Two bool values are compared directly using a C primitive. This may produce
+  unexpected results since all non-zero values are considered true, so
+  different true values may not be equal. The file bool.h (included in
+  splint/lib) provides bool_equal for safe bool comparisons. (Use -boolcompare
+  to inhibit warning)
+lint-exam.c: (in function overflow)
+lint-exam.c:22:2: Likely out-of-bounds store: buf[10]
+    Unable to resolve constraint:
+    requires 9 >= 10
+     needed to satisfy precondition:
+    requires maxSet(buf @ lint-exam.c:22:2) >= 10
+  A memory write may write to an address beyond the allocated buffer. (Use
+  -likelyboundswrite to inhibit warning)
+lint-exam.c: (in function updateEnv)
+lint-exam.c:32:3: Possible out-of-bounds store: strcpy(str, tmp)
+    Unable to resolve constraint:
+    requires maxSet(str @ lint-exam.c:32:10) >= maxRead(getenv("MYENV") @
+    lint-exam.c:30:8)
+     needed to satisfy precondition:
+    requires maxSet(str @ lint-exam.c:32:10) >= maxRead(tmp @
+    lint-exam.c:32:15)
+     derived from strcpy precondition: requires maxSet(<parameter 1>) >=
+    maxRead(<parameter 2>)
+  A memory write may write to an address beyond the allocated buffer. (Use
+  -boundswrite to inhibit warning)
+lint-exam.c: (in function updateEnvSafe)
+lint-exam.c:41:3: Possible out-of-bounds store: str[strSize - 1]
+    Unable to resolve constraint:
+    requires maxSet(str @ lint-exam.c:41:3) >= strSize @ lint-exam.c:41:7 + -1
+     needed to satisfy precondition:
+    requires maxSet(str @ lint-exam.c:41:3) >= strSize @ lint-exam.c:41:7 - 1
+lint-exam.c: (in function main)
+lint-exam.c:51:28: Function malloc expects arg 1 to be size_t gets int: size1
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+

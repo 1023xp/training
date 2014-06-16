@@ -1,0 +1,6909 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+lua-msgpack-native
+dir
+
+
+
+add
+
+qjson
+dir
+
+
+
+add
+
+gd
+dir
+
+
+
+add
+
+minicom
+dir
+
+
+
+add
+
+vo-aacenc
+dir
+
+
+
+add
+
+smack
+dir
+
+
+
+add
+
+libgtk2
+dir
+
+
+
+add
+
+webrtc-audio-processing
+dir
+
+
+
+add
+
+libungif
+dir
+
+
+
+add
+
+opentyrian-data
+dir
+
+
+
+add
+
+libcgicc
+dir
+
+
+
+add
+
+python-setuptools
+dir
+
+
+
+add
+
+glib-networking
+dir
+
+
+
+add
+
+taglib
+dir
+
+
+
+add
+
+liburcu
+dir
+
+
+
+add
+
+fftw
+dir
+
+
+
+add
+
+doom-wad
+dir
+
+
+
+add
+
+gzip
+dir
+
+
+
+add
+
+bison
+dir
+
+
+
+add
+
+libgeotiff
+dir
+
+
+
+add
+
+usbmount
+dir
+
+
+
+add
+
+luasec
+dir
+
+
+
+add
+
+lshw
+dir
+
+
+
+add
+
+beecrypt
+dir
+
+
+
+add
+
+tidsp-binaries
+dir
+
+
+
+add
+
+lame
+dir
+
+
+
+add
+
+fbterm
+dir
+
+
+
+add
+
+lua
+dir
+
+
+
+add
+
+ucl
+dir
+
+
+
+add
+
+libosip2
+dir
+
+
+
+add
+
+ca-certificates
+dir
+
+
+
+add
+
+libtpl
+dir
+
+
+
+add
+
+gob2
+dir
+
+
+
+add
+
+diffutils
+dir
+
+
+
+add
+
+zyre
+dir
+
+
+
+add
+
+sqlcipher
+dir
+
+
+
+add
+
+setserial
+dir
+
+
+
+add
+
+wvstreams
+dir
+
+
+
+add
+
+libhid
+dir
+
+
+
+add
+
+libxmlrpc
+dir
+
+
+
+add
+
+libpfm4
+dir
+
+
+
+add
+
+python-serial
+dir
+
+
+
+add
+
+xterm
+dir
+
+
+
+add
+
+libiscsi
+dir
+
+
+
+add
+
+cegui06
+dir
+
+
+
+add
+
+mobile-broadband-provider-info
+dir
+
+
+
+add
+
+iptables
+dir
+
+
+
+add
+
+glibmm
+dir
+
+
+
+add
+
+ussp-push
+dir
+
+
+
+add
+
+bcusdk
+dir
+
+
+
+add
+
+libstrophe
+dir
+
+
+
+add
+
+libsecret
+dir
+
+
+
+add
+
+make
+dir
+
+
+
+add
+
+fbv
+dir
+
+
+
+add
+
+gesftpserver
+dir
+
+
+
+add
+
+genromfs
+dir
+
+
+
+add
+
+luacrypto
+dir
+
+
+
+add
+
+libexif
+dir
+
+
+
+add
+
+libsha1
+dir
+
+
+
+add
+
+fbgrab
+dir
+
+
+
+add
+
+mtd
+dir
+
+
+
+add
+
+openvpn
+dir
+
+
+
+add
+
+dhcpcd
+dir
+
+
+
+add
+
+lua-coatpersistent
+dir
+
+
+
+add
+
+libnetfilter_queue
+dir
+
+
+
+add
+
+googlefontdirectory
+dir
+
+
+
+add
+
+tiff
+dir
+
+
+
+add
+
+ncdu
+dir
+
+
+
+add
+
+jack2
+dir
+
+
+
+add
+
+ltris
+dir
+
+
+
+add
+
+devmem2
+dir
+
+
+
+add
+
+mtr
+dir
+
+
+
+add
+
+sunxi-mali-prop
+dir
+
+
+
+add
+
+libmcrypt
+dir
+
+
+
+add
+
+copas
+dir
+
+
+
+add
+
+fan-ctrl
+dir
+
+
+
+add
+
+libdrm
+dir
+
+
+
+add
+
+arptables
+dir
+
+
+
+add
+
+xvkbd
+dir
+
+
+
+add
+
+iw
+dir
+
+
+
+add
+
+ofono
+dir
+
+
+
+add
+
+tftpd
+dir
+
+
+
+add
+
+on2-8170-libs
+dir
+
+
+
+add
+
+tcping
+dir
+
+
+
+add
+
+python-versiontools
+dir
+
+
+
+add
+
+autossh
+dir
+
+
+
+add
+
+libmad
+dir
+
+
+
+add
+
+libfslparser
+dir
+
+
+
+add
+
+neard
+dir
+
+
+
+add
+
+dfu-util
+dir
+
+
+
+add
+
+perl-xml-parser
+dir
+
+
+
+add
+
+libunwind
+dir
+
+
+
+add
+
+clapack
+dir
+
+
+
+add
+
+gadgetfs-test
+dir
+
+
+
+add
+
+liblo
+dir
+
+
+
+add
+
+gtkperf
+dir
+
+
+
+add
+
+gqview
+dir
+
+
+
+add
+
+postgresql
+dir
+
+
+
+add
+
+libcue
+dir
+
+
+
+add
+
+libtool
+dir
+
+
+
+add
+
+libestr
+dir
+
+
+
+add
+
+tinyxml
+dir
+
+
+
+add
+
+ti-uim
+dir
+
+
+
+add
+
+quagga
+dir
+
+
+
+add
+
+efl
+dir
+
+
+
+add
+
+dnsmasq
+dir
+
+
+
+add
+
+foomatic-filters
+dir
+
+
+
+add
+
+jquery-validation
+dir
+
+
+
+add
+
+xl2tp
+dir
+
+
+
+add
+
+jamvm
+dir
+
+
+
+add
+
+jq
+dir
+
+
+
+add
+
+cppzmq
+dir
+
+
+
+add
+
+zlog
+dir
+
+
+
+add
+
+mesa3d
+dir
+
+
+
+add
+
+celt051
+dir
+
+
+
+add
+
+fxload
+dir
+
+
+
+add
+
+haserl
+dir
+
+
+
+add
+
+python-mad
+dir
+
+
+
+add
+
+cryptsetup
+dir
+
+
+
+add
+
+midori
+dir
+
+
+
+add
+
+orc
+dir
+
+
+
+add
+
+pcsc-lite
+dir
+
+
+
+add
+
+net-tools
+dir
+
+
+
+add
+
+sshfs
+dir
+
+
+
+add
+
+lxc
+dir
+
+
+
+add
+
+sdl_gfx
+dir
+
+
+
+add
+
+python-keyring
+dir
+
+
+
+add
+
+ushare
+dir
+
+
+
+add
+
+dropwatch
+dir
+
+
+
+add
+
+minidlna
+dir
+
+
+
+add
+
+gcc
+dir
+
+
+
+add
+
+lrandom
+dir
+
+
+
+add
+
+lttng-modules
+dir
+
+
+
+add
+
+ti-gfx
+dir
+
+
+
+add
+
+media-ctl
+dir
+
+
+
+add
+
+libgcrypt
+dir
+
+
+
+add
+
+dialog
+dir
+
+
+
+add
+
+wayland
+dir
+
+
+
+add
+
+msmtp
+dir
+
+
+
+add
+
+libdvdread
+dir
+
+
+
+add
+
+ipsec-tools
+dir
+
+
+
+add
+
+libusb-compat
+dir
+
+
+
+add
+
+ntp
+dir
+
+
+
+add
+
+feh
+dir
+
+
+
+add
+
+ffmpeg
+dir
+
+
+
+add
+
+libiconv
+dir
+
+
+
+add
+
+dbus-glib
+dir
+
+
+
+add
+
+dmalloc
+dir
+
+
+
+add
+
+jansson
+dir
+
+
+
+add
+
+nuttcp
+dir
+
+
+
+add
+
+input-event-daemon
+dir
+
+
+
+add
+
+pptp-linux
+dir
+
+
+
+add
+
+m4
+dir
+
+
+
+add
+
+python-pyusb
+dir
+
+
+
+add
+
+pcmanfm
+dir
+
+
+
+add
+
+nodejs
+dir
+
+
+
+add
+
+libshairplay
+dir
+
+
+
+add
+
+libxkbcommon
+dir
+
+
+
+add
+
+libsvg
+dir
+
+
+
+add
+
+pkgconf
+dir
+
+
+
+add
+
+log4cxx
+dir
+
+
+
+add
+
+dvbsnoop
+dir
+
+
+
+add
+
+lsuio
+dir
+
+
+
+add
+
+libcap-ng
+dir
+
+
+
+add
+
+gdb
+dir
+
+
+
+add
+
+yajl
+dir
+
+
+
+add
+
+libnl
+dir
+
+
+
+add
+
+a10disp
+dir
+
+
+
+add
+
+ccid
+dir
+
+
+
+add
+
+libvpx
+dir
+
+
+
+add
+
+rpi-firmware
+dir
+
+
+
+add
+
+valgrind
+dir
+
+
+
+add
+
+nut
+dir
+
+
+
+add
+
+linux-headers
+dir
+
+
+
+add
+
+mplayer
+dir
+
+
+
+add
+
+ulogd
+dir
+
+
+
+add
+
+luajson
+dir
+
+
+
+add
+
+libsndfile
+dir
+
+
+
+add
+
+flashrom
+dir
+
+
+
+add
+
+cloop
+dir
+
+
+
+add
+
+mtdev
+dir
+
+
+
+add
+
+mii-diag
+dir
+
+
+
+add
+
+libusb
+dir
+
+
+
+add
+
+argus
+dir
+
+
+
+add
+
+expat
+dir
+
+
+
+add
+
+apr
+dir
+
+
+
+add
+
+ser2net
+dir
+
+
+
+add
+
+stress
+dir
+
+
+
+add
+
+libatomic_ops
+dir
+
+
+
+add
+
+rtptools
+dir
+
+
+
+add
+
+sunxi-mali
+dir
+
+
+
+add
+
+ltp-testsuite
+dir
+
+
+
+add
+
+sawman
+dir
+
+
+
+add
+
+lttng-tools
+dir
+
+
+
+add
+
+openocd
+dir
+
+
+
+add
+
+freerdp
+dir
+
+
+
+add
+
+axel
+dir
+
+
+
+add
+
+ifplugd
+dir
+
+
+
+add
+
+ux500-firmware
+dir
+
+
+
+add
+
+libconfig
+dir
+
+
+
+add
+
+xbmc-addon-xvdr
+dir
+
+
+
+add
+
+sane-backends
+dir
+
+
+
+add
+
+wireshark
+dir
+
+
+
+add
+
+opkg
+dir
+
+
+
+add
+
+xenomai
+dir
+
+
+
+add
+
+linux-fusion
+dir
+
+
+
+add
+
+sam-ba
+dir
+
+
+
+add
+
+ctorrent
+dir
+
+
+
+add
+
+libraw1394
+dir
+
+
+
+add
+
+boa
+dir
+
+
+
+add
+
+lm-sensors
+dir
+
+
+
+add
+
+iozone
+dir
+
+
+
+add
+
+netperf
+dir
+
+
+
+add
+
+lzo
+dir
+
+
+
+add
+
+ngircd
+dir
+
+
+
+add
+
+wget
+dir
+
+
+
+add
+
+libcofi
+dir
+
+
+
+add
+
+libxml2
+dir
+
+
+
+add
+
+coreutils
+dir
+
+
+
+add
+
+dvb-apps
+dir
+
+
+
+add
+
+libsoup
+dir
+
+
+
+add
+
+json-javascript
+dir
+
+
+
+add
+
+faad2
+dir
+
+
+
+add
+
+python-dialog
+dir
+
+
+
+add
+
+oprofile
+dir
+
+
+
+add
+
+olsr
+dir
+
+
+
+add
+
+gnuchess
+dir
+
+
+
+add
+
+libesmtp
+dir
+
+
+
+add
+
+libdnet
+dir
+
+
+
+add
+
+luasql-sqlite3
+dir
+
+
+
+add
+
+rt-tests
+dir
+
+
+
+add
+
+lcdproc
+dir
+
+
+
+add
+
+fswebcam
+dir
+
+
+
+add
+
+pkg-perl.mk
+file
+
+
+
+add
+
+liberation
+dir
+
+
+
+add
+
+lpty
+dir
+
+
+
+add
+
+ptpd2
+dir
+
+
+
+add
+
+xbmc
+dir
+
+
+
+add
+
+libsvgtiny
+dir
+
+
+
+add
+
+xinetd
+dir
+
+
+
+add
+
+libv4l
+dir
+
+
+
+add
+
+libenca
+dir
+
+
+
+add
+
+sysklogd
+dir
+
+
+
+add
+
+libcdaudio
+dir
+
+
+
+add
+
+ramspeed
+dir
+
+
+
+add
+
+lsof
+dir
+
+
+
+add
+
+flot
+dir
+
+
+
+add
+
+jquery-sparkline
+dir
+
+
+
+add
+
+vsftpd
+dir
+
+
+
+add
+
+libfreefare
+dir
+
+
+
+add
+
+python-pyro
+dir
+
+
+
+add
+
+tremor
+dir
+
+
+
+add
+
+mpg123
+dir
+
+
+
+add
+
+libupnp
+dir
+
+
+
+add
+
+ti-utils
+dir
+
+
+
+add
+
+lzlib
+dir
+
+
+
+add
+
+cjson
+dir
+
+
+
+add
+
+tcpdump
+dir
+
+
+
+add
+
+jpeg-turbo
+dir
+
+
+
+add
+
+socketcand
+dir
+
+
+
+add
+
+openobex
+dir
+
+
+
+add
+
+dhrystone
+dir
+
+
+
+add
+
+lpc3250loader
+dir
+
+
+
+add
+
+orbit
+dir
+
+
+
+add
+
+metacity
+dir
+
+
+
+add
+
+cmake
+dir
+
+
+
+add
+
+portmap
+dir
+
+
+
+add
+
+ipset
+dir
+
+
+
+add
+
+libtorrent
+dir
+
+
+
+add
+
+linenoise
+dir
+
+
+
+add
+
+fdk-aac
+dir
+
+
+
+add
+
+cppdb
+dir
+
+
+
+add
+
+nano
+dir
+
+
+
+add
+
+lcdapi
+dir
+
+
+
+add
+
+openpowerlink
+dir
+
+
+
+add
+
+nftables
+dir
+
+
+
+add
+
+rpm
+dir
+
+
+
+add
+
+ezxml
+dir
+
+
+
+add
+
+lbase64
+dir
+
+
+
+add
+
+udisks
+dir
+
+
+
+add
+
+intltool
+dir
+
+
+
+add
+
+slang
+dir
+
+
+
+add
+
+lua-coat
+dir
+
+
+
+add
+
+liboauth
+dir
+
+
+
+add
+
+libndp
+dir
+
+
+
+add
+
+hwdata
+dir
+
+
+
+add
+
+eudev
+dir
+
+
+
+add
+
+socat
+dir
+
+
+
+add
+
+qt5
+dir
+
+
+
+add
+
+fio
+dir
+
+
+
+add
+
+bash
+dir
+
+
+
+add
+
+mcrypt
+dir
+
+
+
+add
+
+ethtool
+dir
+
+
+
+add
+
+bellagio
+dir
+
+
+
+add
+
+luabitop
+dir
+
+
+
+add
+
+gnupg
+dir
+
+
+
+add
+
+x11vnc
+dir
+
+
+
+add
+
+icu
+dir
+
+
+
+add
+
+fis
+dir
+
+
+
+add
+
+perl-module-build
+dir
+
+
+
+add
+
+madplay
+dir
+
+
+
+add
+
+libiqrf
+dir
+
+
+
+add
+
+libfuse
+dir
+
+
+
+add
+
+libargtable2
+dir
+
+
+
+add
+
+vim
+dir
+
+
+
+add
+
+lua-cjson
+dir
+
+
+
+add
+
+time
+dir
+
+
+
+add
+
+python-pyzmq
+dir
+
+
+
+add
+
+lsqlite3
+dir
+
+
+
+add
+
+netatalk
+dir
+
+
+
+add
+
+memtester
+dir
+
+
+
+add
+
+php-gnupg
+dir
+
+
+
+add
+
+libnetfilter_cthelper
+dir
+
+
+
+add
+
+ltrace
+dir
+
+
+
+add
+
+ncftp
+dir
+
+
+
+add
+
+dbus-python
+dir
+
+
+
+add
+
+atk
+dir
+
+
+
+add
+
+lvm2
+dir
+
+
+
+add
+
+aircrack-ng
+dir
+
+
+
+add
+
+python-dpkt
+dir
+
+
+
+add
+
+libsoxr
+dir
+
+
+
+add
+
+fmtools
+dir
+
+
+
+add
+
+scons
+dir
+
+
+
+add
+
+pv
+dir
+
+
+
+add
+
+python-tornado
+dir
+
+
+
+add
+
+Config.in.host
+file
+
+
+
+add
+
+sound-theme-borealis
+dir
+
+
+
+add
+
+eigen
+dir
+
+
+
+add
+
+lockdev
+dir
+
+
+
+add
+
+luasocket
+dir
+
+
+
+add
+
+libvorbis
+dir
+
+
+
+add
+
+gamin
+dir
+
+
+
+add
+
+libnfc
+dir
+
+
+
+add
+
+rsync
+dir
+
+
+
+add
+
+ljsyscall
+dir
+
+
+
+add
+
+grantlee
+dir
+
+
+
+add
+
+on2-8170-modules
+dir
+
+
+
+add
+
+flite
+dir
+
+
+
+add
+
+libatasmart
+dir
+
+
+
+add
+
+pkg-python.mk
+file
+
+
+
+add
+
+zmqpp
+dir
+
+
+
+add
+
+libmatroska
+dir
+
+
+
+add
+
+libtirpc
+dir
+
+
+
+add
+
+fconfig
+dir
+
+
+
+add
+
+libnfs
+dir
+
+
+
+add
+
+rpcbind
+dir
+
+
+
+add
+
+jimtcl
+dir
+
+
+
+add
+
+fb-test-app
+dir
+
+
+
+add
+
+x11r7
+dir
+
+
+
+add
+
+iucode-tool
+dir
+
+
+
+add
+
+git
+dir
+
+
+
+add
+
+qt
+dir
+
+
+
+add
+
+shared-mime-info
+dir
+
+
+
+add
+
+python-nfc
+dir
+
+
+
+add
+
+uboot-tools
+dir
+
+
+
+add
+
+sysvinit
+dir
+
+
+
+add
+
+lualogging
+dir
+
+
+
+add
+
+rdesktop
+dir
+
+
+
+add
+
+zd1211-firmware
+dir
+
+
+
+add
+
+psmisc
+dir
+
+
+
+add
+
+libfribidi
+dir
+
+
+
+add
+
+dmraid
+dir
+
+
+
+add
+
+kbd
+dir
+
+
+
+add
+
+pkg-generic.mk
+file
+
+
+
+add
+
+haveged
+dir
+
+
+
+add
+
+numactl
+dir
+
+
+
+add
+
+luaposix
+dir
+
+
+
+add
+
+igh-ethercat
+dir
+
+
+
+add
+
+libnftnl
+dir
+
+
+
+add
+
+libsigc
+dir
+
+
+
+add
+
+texinfo
+dir
+
+
+
+add
+
+linphone
+dir
+
+
+
+add
+
+uemacs
+dir
+
+
+
+add
+
+fbdump
+dir
+
+
+
+add
+
+mtools
+dir
+
+
+
+add
+
+libnfnetlink
+dir
+
+
+
+add
+
+python-ipy
+dir
+
+
+
+add
+
+inadyn
+dir
+
+
+
+add
+
+snowball-init
+dir
+
+
+
+add
+
+readline
+dir
+
+
+
+add
+
+luaexpat
+dir
+
+
+
+add
+
+vlc
+dir
+
+
+
+add
+
+libsamplerate
+dir
+
+
+
+add
+
+nfs-utils
+dir
+
+
+
+add
+
+libnetfilter_log
+dir
+
+
+
+add
+
+libmhash
+dir
+
+
+
+add
+
+systemd
+dir
+
+
+
+add
+
+php-imagick
+dir
+
+
+
+add
+
+libdaemon
+dir
+
+
+
+add
+
+php-zmq
+dir
+
+
+
+add
+
+grep
+dir
+
+
+
+add
+
+nfacct
+dir
+
+
+
+add
+
+sdl_ttf
+dir
+
+
+
+add
+
+fltk
+dir
+
+
+
+add
+
+network-manager
+dir
+
+
+
+add
+
+libcuefile
+dir
+
+
+
+add
+
+python-msgpack
+dir
+
+
+
+add
+
+libubox
+dir
+
+
+
+add
+
+openpgm
+dir
+
+
+
+add
+
+neardal
+dir
+
+
+
+add
+
+librsvg
+dir
+
+
+
+add
+
+gdbm
+dir
+
+
+
+add
+
+util-linux
+dir
+
+
+
+add
+
+dhcp
+dir
+
+
+
+add
+
+python-configobj
+dir
+
+
+
+add
+
+jsmin
+dir
+
+
+
+add
+
+lcms2
+dir
+
+
+
+add
+
+strace
+dir
+
+
+
+add
+
+libreplaygain
+dir
+
+
+
+add
+
+tinymembench
+dir
+
+
+
+add
+
+popt
+dir
+
+
+
+add
+
+torsmo
+dir
+
+
+
+add
+
+pkg-utils.mk
+file
+
+
+
+add
+
+librsync
+dir
+
+
+
+add
+
+wvdial
+dir
+
+
+
+add
+
+mongoose
+dir
+
+
+
+add
+
+sdl_mixer
+dir
+
+
+
+add
+
+gmpc
+dir
+
+
+
+add
+
+fluxbox
+dir
+
+
+
+add
+
+b43-fwcutter
+dir
+
+
+
+add
+
+alsamixergui
+dir
+
+
+
+add
+
+nettle
+dir
+
+
+
+add
+
+sredird
+dir
+
+
+
+add
+
+nasm
+dir
+
+
+
+add
+
+rtai
+dir
+
+
+
+add
+
+subversion
+dir
+
+
+
+add
+
+logrotate
+dir
+
+
+
+add
+
+libjson
+dir
+
+
+
+add
+
+smcroute
+dir
+
+
+
+add
+
+rsyslog
+dir
+
+
+
+add
+
+udpcast
+dir
+
+
+
+add
+
+libogg
+dir
+
+
+
+add
+
+python3
+dir
+
+
+
+add
+
+exfat-utils
+dir
+
+
+
+add
+
+pkg-cmake.mk
+file
+
+
+
+add
+
+ccache
+dir
+
+
+
+add
+
+liblog4c-localtime
+dir
+
+
+
+add
+
+wmctrl
+dir
+
+
+
+add
+
+snappy
+dir
+
+
+
+add
+
+attr
+dir
+
+
+
+add
+
+evtest
+dir
+
+
+
+add
+
+libmbim
+dir
+
+
+
+add
+
+qwt
+dir
+
+
+
+add
+
+libnetfilter_acct
+dir
+
+
+
+add
+
+alsa-utils
+dir
+
+
+
+add
+
+mrouted
+dir
+
+
+
+add
+
+libraw
+dir
+
+
+
+add
+
+mdadm
+dir
+
+
+
+add
+
+directfb
+dir
+
+
+
+add
+
+vtun
+dir
+
+
+
+add
+
+tz
+dir
+
+
+
+add
+
+prboom
+dir
+
+
+
+add
+
+bustle
+dir
+
+
+
+add
+
+xmlstarlet
+dir
+
+
+
+add
+
+libevdev
+dir
+
+
+
+add
+
+pppd
+dir
+
+
+
+add
+
+iostat
+dir
+
+
+
+add
+
+xbmc-pvr-addons
+dir
+
+
+
+add
+
+powervr
+dir
+
+
+
+add
+
+pango
+dir
+
+
+
+add
+
+smstools3
+dir
+
+
+
+add
+
+keyutils
+dir
+
+
+
+add
+
+yasm
+dir
+
+
+
+add
+
+proxychains-ng
+dir
+
+
+
+add
+
+ljlinenoise
+dir
+
+
+
+add
+
+i2c-tools
+dir
+
+
+
+add
+
+upx
+dir
+
+
+
+add
+
+dash
+dir
+
+
+
+add
+
+usbredir
+dir
+
+
+
+add
+
+conntrack-tools
+dir
+
+
+
+add
+
+rings
+dir
+
+
+
+add
+
+aumix
+dir
+
+
+
+add
+
+gmp
+dir
+
+
+
+add
+
+alsa-lib
+dir
+
+
+
+add
+
+json-glib
+dir
+
+
+
+add
+
+freescale-imx
+dir
+
+
+
+add
+
+gettext
+dir
+
+
+
+add
+
+webkit
+dir
+
+
+
+add
+
+monit
+dir
+
+
+
+add
+
+startup-notification
+dir
+
+
+
+add
+
+boost
+dir
+
+
+
+add
+
+elfutils
+dir
+
+
+
+add
+
+libcap
+dir
+
+
+
+add
+
+explorercanvas
+dir
+
+
+
+add
+
+owl-linux
+dir
+
+
+
+add
+
+libsysfs
+dir
+
+
+
+add
+
+makedevs
+dir
+
+
+
+add
+
+libwebsockets
+dir
+
+
+
+add
+
+uclibc
+dir
+
+
+
+add
+
+ne10
+dir
+
+
+
+add
+
+libvncserver
+dir
+
+
+
+add
+
+less
+dir
+
+
+
+add
+
+samba4
+dir
+
+
+
+add
+
+linux-firmware
+dir
+
+
+
+add
+
+dtc
+dir
+
+
+
+add
+
+c-ares
+dir
+
+
+
+add
+
+dbus-cpp
+dir
+
+
+
+add
+
+intel-microcode
+dir
+
+
+
+add
+
+lzip
+dir
+
+
+
+add
+
+read-edid
+dir
+
+
+
+add
+
+rtorrent
+dir
+
+
+
+add
+
+ntfs-3g
+dir
+
+
+
+add
+
+libmms
+dir
+
+
+
+add
+
+wsapi
+dir
+
+
+
+add
+
+yavta
+dir
+
+
+
+add
+
+aiccu
+dir
+
+
+
+add
+
+giblib
+dir
+
+
+
+add
+
+xerces
+dir
+
+
+
+add
+
+binutils
+dir
+
+
+
+add
+
+nanocom
+dir
+
+
+
+add
+
+cvs
+dir
+
+
+
+add
+
+urg
+dir
+
+
+
+add
+
+omap-u-boot-utils
+dir
+
+
+
+add
+
+tn5250
+dir
+
+
+
+add
+
+trace-cmd
+dir
+
+
+
+add
+
+sqlite
+dir
+
+
+
+add
+
+fping
+dir
+
+
+
+add
+
+libglade
+dir
+
+
+
+add
+
+gperf
+dir
+
+
+
+add
+
+rsh-redone
+dir
+
+
+
+add
+
+redis
+dir
+
+
+
+add
+
+automake
+dir
+
+
+
+add
+
+pkg-luarocks.mk
+file
+
+
+
+add
+
+libpcap
+dir
+
+
+
+add
+
+sunxi-cedarx
+dir
+
+
+
+add
+
+python-pypcap
+dir
+
+
+
+add
+
+log4cplus
+dir
+
+
+
+add
+
+libmnl
+dir
+
+
+
+add
+
+libtasn1
+dir
+
+
+
+add
+
+ruby
+dir
+
+
+
+add
+
+ebtables
+dir
+
+
+
+add
+
+supervisor
+dir
+
+
+
+add
+
+jpeg
+dir
+
+
+
+add
+
+zic
+dir
+
+
+
+add
+
+libcgroup
+dir
+
+
+
+add
+
+opus
+dir
+
+
+
+add
+
+python-pyrex
+dir
+
+
+
+add
+
+duma
+dir
+
+
+
+add
+
+tzdata
+dir
+
+
+
+add
+
+sdl_net
+dir
+
+
+
+add
+
+transmission
+dir
+
+
+
+add
+
+python-posix-ipc
+dir
+
+
+
+add
+
+jquery-ui
+dir
+
+
+
+add
+
+python-crc16
+dir
+
+
+
+add
+
+input-tools
+dir
+
+
+
+add
+
+neon
+dir
+
+
+
+add
+
+polarssl
+dir
+
+
+
+add
+
+radvd
+dir
+
+
+
+add
+
+kobs-ng
+dir
+
+
+
+add
+
+libsocketcan
+dir
+
+
+
+add
+
+which
+dir
+
+
+
+add
+
+linknx
+dir
+
+
+
+add
+
+nbd
+dir
+
+
+
+add
+
+fbset
+dir
+
+
+
+add
+
+exfat
+dir
+
+
+
+add
+
+libdvdnav
+dir
+
+
+
+add
+
+cups
+dir
+
+
+
+add
+
+w_scan
+dir
+
+
+
+add
+
+gnutls
+dir
+
+
+
+add
+
+snmppp
+dir
+
+
+
+add
+
+httping
+dir
+
+
+
+add
+
+liblogging
+dir
+
+
+
+add
+
+autoconf
+dir
+
+
+
+add
+
+libassuan
+dir
+
+
+
+add
+
+snowball-hdmiservice
+dir
+
+
+
+add
+
+gpm
+dir
+
+
+
+add
+
+blackbox
+dir
+
+
+
+add
+
+libgpgme
+dir
+
+
+
+add
+
+enscript
+dir
+
+
+
+add
+
+ocrad
+dir
+
+
+
+add
+
+lttng-libust
+dir
+
+
+
+add
+
+iputils
+dir
+
+
+
+add
+
+libconfuse
+dir
+
+
+
+add
+
+harfbuzz
+dir
+
+
+
+add
+
+sconeserver
+dir
+
+
+
+add
+
+can-utils
+dir
+
+
+
+add
+
+xz
+dir
+
+
+
+add
+
+enlightenment
+dir
+
+
+
+add
+
+hostapd
+dir
+
+
+
+add
+
+polkit
+dir
+
+
+
+add
+
+luaexpatutils
+dir
+
+
+
+add
+
+lftp
+dir
+
+
+
+add
+
+libmpd
+dir
+
+
+
+add
+
+rtmpdump
+dir
+
+
+
+add
+
+modem-manager
+dir
+
+
+
+add
+
+p910nd
+dir
+
+
+
+add
+
+statserial
+dir
+
+
+
+add
+
+jhead
+dir
+
+
+
+add
+
+cryptodev-linux
+dir
+
+
+
+add
+
+mxml
+dir
+
+
+
+add
+
+wireless_tools
+dir
+
+
+
+add
+
+tslib
+dir
+
+
+
+add
+
+screen
+dir
+
+
+
+add
+
+eeprog
+dir
+
+
+
+add
+
+libcec
+dir
+
+
+
+add
+
+python
+dir
+
+
+
+add
+
+samba
+dir
+
+
+
+add
+
+tzdump
+dir
+
+
+
+add
+
+luajit
+dir
+
+
+
+add
+
+stunnel
+dir
+
+
+
+add
+
+lua-ev
+dir
+
+
+
+add
+
+avrdude
+dir
+
+
+
+add
+
+gtk2-themes
+dir
+
+
+
+add
+
+nmap
+dir
+
+
+
+add
+
+pkg-download.mk
+file
+
+
+
+add
+
+dbus
+dir
+
+
+
+add
+
+f2fs-tools
+dir
+
+
+
+add
+
+libsigsegv
+dir
+
+
+
+add
+
+live555
+dir
+
+
+
+add
+
+tree
+dir
+
+
+
+add
+
+libaio
+dir
+
+
+
+add
+
+b43-firmware
+dir
+
+
+
+add
+
+vorbis-tools
+dir
+
+
+
+add
+
+lzma
+dir
+
+
+
+add
+
+matchbox
+dir
+
+
+
+add
+
+libcdio
+dir
+
+
+
+add
+
+python-pysnmp-apps
+dir
+
+
+
+add
+
+civetweb
+dir
+
+
+
+add
+
+berkeleydb
+dir
+
+
+
+add
+
+pkg-virtual.mk
+file
+
+
+
+add
+
+bind
+dir
+
+
+
+add
+
+ortp
+dir
+
+
+
+add
+
+speex
+dir
+
+
+
+add
+
+openntpd
+dir
+
+
+
+add
+
+php-yaml
+dir
+
+
+
+add
+
+mutt
+dir
+
+
+
+add
+
+libyaml
+dir
+
+
+
+add
+
+ipkg
+dir
+
+
+
+add
+
+leafpad
+dir
+
+
+
+add
+
+libmodplug
+dir
+
+
+
+add
+
+flann
+dir
+
+
+
+add
+
+python-m2crypto
+dir
+
+
+
+add
+
+libdvbsi
+dir
+
+
+
+add
+
+cwiid
+dir
+
+
+
+add
+
+rp-pppoe
+dir
+
+
+
+add
+
+netstat-nat
+dir
+
+
+
+add
+
+chrony
+dir
+
+
+
+add
+
+libdmtx
+dir
+
+
+
+add
+
+luainterpreter
+dir
+
+
+
+add
+
+lesstif
+dir
+
+
+
+add
+
+e2fsprogs
+dir
+
+
+
+add
+
+linux-pam
+dir
+
+
+
+add
+
+mmc-utils
+dir
+
+
+
+add
+
+sg3_utils
+dir
+
+
+
+add
+
+jquery-ui-themes
+dir
+
+
+
+add
+
+dmidecode
+dir
+
+
+
+add
+
+pkg-autotools.mk
+file
+
+
+
+add
+
+jquery
+dir
+
+
+
+add
+
+cosmo
+dir
+
+
+
+add
+
+enchant
+dir
+
+
+
+add
+
+libnetfilter_cttimeout
+dir
+
+
+
+add
+
+unionfs
+dir
+
+
+
+add
+
+libxslt
+dir
+
+
+
+add
+
+classpath
+dir
+
+
+
+add
+
+libplist
+dir
+
+
+
+add
+
+luarocks
+dir
+
+
+
+add
+
+rng-tools
+dir
+
+
+
+add
+
+gsl
+dir
+
+
+
+add
+
+cppcms
+dir
+
+
+
+add
+
+json-c
+dir
+
+
+
+add
+
+libcgi
+dir
+
+
+
+add
+
+pciutils
+dir
+
+
+
+add
+
+ecryptfs-utils
+dir
+
+
+
+add
+
+directfb-examples
+dir
+
+
+
+add
+
+protobuf
+dir
+
+
+
+add
+
+thrift
+dir
+
+
+
+add
+
+libgsasl
+dir
+
+
+
+add
+
+wipe
+dir
+
+
+
+add
+
+cgilua
+dir
+
+
+
+add
+
+dhcpdump
+dir
+
+
+
+add
+
+gvfs
+dir
+
+
+
+add
+
+coxpcall
+dir
+
+
+
+add
+
+libuci
+dir
+
+
+
+add
+
+python-pycrypto
+dir
+
+
+
+add
+
+btrfs-progs
+dir
+
+
+
+add
+
+libsepol
+dir
+
+
+
+add
+
+sudo
+dir
+
+
+
+add
+
+fakeroot
+dir
+
+
+
+add
+
+psplash
+dir
+
+
+
+add
+
+usbutils
+dir
+
+
+
+add
+
+python-libconfig
+dir
+
+
+
+add
+
+gptfdisk
+dir
+
+
+
+add
+
+sylpheed
+dir
+
+
+
+add
+
+libsexy
+dir
+
+
+
+add
+
+python-protobuf
+dir
+
+
+
+add
+
+iftop
+dir
+
+
+
+add
+
+evemu
+dir
+
+
+
+add
+
+poppler
+dir
+
+
+
+add
+
+ncurses
+dir
+
+
+
+add
+
+lzop
+dir
+
+
+
+add
+
+luafilesystem
+dir
+
+
+
+add
+
+sdparm
+dir
+
+
+
+add
+
+bwm-ng
+dir
+
+
+
+add
+
+cpuload
+dir
+
+
+
+add
+
+apitrace
+dir
+
+
+
+add
+
+pcre
+dir
+
+
+
+add
+
+gnu-efi
+dir
+
+
+
+add
+
+znc
+dir
+
+
+
+add
+
+kismet
+dir
+
+
+
+add
+
+gpsd
+dir
+
+
+
+add
+
+igmpproxy
+dir
+
+
+
+add
+
+patch
+dir
+
+
+
+add
+
+exim
+dir
+
+
+
+add
+
+dbus-triggerd
+dir
+
+
+
+add
+
+open2300
+dir
+
+
+
+add
+
+docker
+dir
+
+
+
+add
+
+ptpd
+dir
+
+
+
+add
+
+libpng
+dir
+
+
+
+add
+
+joe
+dir
+
+
+
+add
+
+schifra
+dir
+
+
+
+add
+
+cdrkit
+dir
+
+
+
+add
+
+protobuf-c
+dir
+
+
+
+add
+
+lua-testmore
+dir
+
+
+
+add
+
+libplayer
+dir
+
+
+
+add
+
+jasper
+dir
+
+
+
+add
+
+lrzsz
+dir
+
+
+
+add
+
+pax-utils
+dir
+
+
+
+add
+
+p11-kit
+dir
+
+
+
+add
+
+lpeg
+dir
+
+
+
+add
+
+tinyhttpd
+dir
+
+
+
+add
+
+gstreamer
+dir
+
+
+
+add
+
+connman
+dir
+
+
+
+add
+
+python-pyparsing
+dir
+
+
+
+add
+
+libfslvpuwrap
+dir
+
+
+
+add
+
+findutils
+dir
+
+
+
+add
+
+bluez_utils
+dir
+
+
+
+add
+
+liboping
+dir
+
+
+
+add
+
+sunxi-tools
+dir
+
+
+
+add
+
+erlang
+dir
+
+
+
+add
+
+tcllib
+dir
+
+
+
+add
+
+iproute2
+dir
+
+
+
+add
+
+pulseaudio
+dir
+
+
+
+add
+
+bonnie
+dir
+
+
+
+add
+
+libftdi
+dir
+
+
+
+add
+
+libqmi
+dir
+
+
+
+add
+
+netplug
+dir
+
+
+
+add
+
+wireless-regdb
+dir
+
+
+
+add
+
+liblockfile
+dir
+
+
+
+add
+
+python-thrift
+dir
+
+
+
+add
+
+bootutils
+dir
+
+
+
+add
+
+sstrip
+dir
+
+
+
+add
+
+libao
+dir
+
+
+
+add
+
+macchanger
+dir
+
+
+
+add
+
+avahi
+dir
+
+
+
+add
+
+picocom
+dir
+
+
+
+add
+
+kmod
+dir
+
+
+
+add
+
+bridge-utils
+dir
+
+
+
+add
+
+libnss
+dir
+
+
+
+add
+
+lite
+dir
+
+
+
+add
+
+flashbench
+dir
+
+
+
+add
+
+empty
+dir
+
+
+
+add
+
+ktap
+dir
+
+
+
+add
+
+dosfstools
+dir
+
+
+
+add
+
+libfcgi
+dir
+
+
+
+add
+
+kexec
+dir
+
+
+
+add
+
+acl
+dir
+
+
+
+add
+
+rpi-userland
+dir
+
+
+
+add
+
+flac
+dir
+
+
+
+add
+
+iperf
+dir
+
+
+
+add
+
+libserial
+dir
+
+
+
+add
+
+qemu
+dir
+
+
+
+add
+
+musepack
+dir
+
+
+
+add
+
+czmq
+dir
+
+
+
+add
+
+am33x-cm3
+dir
+
+
+
+add
+
+jquery-keyboard
+dir
+
+
+
+add
+
+cryptodev
+dir
+
+
+
+add
+
+lighttpd
+dir
+
+
+
+add
+
+libseccomp
+dir
+
+
+
+add
+
+whetstone
+dir
+
+
+
+add
+
+libeXosip2
+dir
+
+
+
+add
+
+libllcp
+dir
+
+
+
+add
+
+cifs-utils
+dir
+
+
+
+add
+
+python-meld3
+dir
+
+
+
+add
+
+freetype
+dir
+
+
+
+add
+
+dtach
+dir
+
+
+
+add
+
+mongrel2
+dir
+
+
+
+add
+
+hiawatha
+dir
+
+
+
+add
+
+gnuplot
+dir
+
+
+
+add
+
+expect
+dir
+
+
+
+add
+
+rapidjson
+dir
+
+
+
+add
+
+wavpack
+dir
+
+
+
+add
+
+lua-csnappy
+dir
+
+
+
+add
+
+zxing
+dir
+
+
+
+add
+
+gdk-pixbuf
+dir
+
+
+
+add
+
+libid3tag
+dir
+
+
+
+add
+
+libgail
+dir
+
+
+
+add
+
+heimdal
+dir
+
+
+
+add
+
+spice
+dir
+
+
+
+add
+
+armadillo
+dir
+
+
+
+add
+
+libebml
+dir
+
+
+
+add
+
+libevent
+dir
+
+
+
+add
+
+libarchive
+dir
+
+
+
+add
+
+xscreensaver
+dir
+
+
+
+add
+
+python-json-schema-validator
+dir
+
+
+
+add
+
+gstreamer1
+dir
+
+
+
+add
+
+hplip
+dir
+
+
+
+add
+
+libedit
+dir
+
+
+
+add
+
+newt
+dir
+
+
+
+add
+
+imlib2
+dir
+
+
+
+add
+
+parted
+dir
+
+
+
+add
+
+argp-standalone
+dir
+
+
+
+add
+
+jquery-mobile
+dir
+
+
+
+add
+
+aespipe
+dir
+
+
+
+add
+
+sdl_sound
+dir
+
+
+
+add
+
+openswan
+dir
+
+
+
+add
+
+libffi
+dir
+
+
+
+add
+
+pixman
+dir
+
+
+
+add
+
+perf
+dir
+
+
+
+add
+
+libmbus
+dir
+
+
+
+add
+
+tmux
+dir
+
+
+
+add
+
+imagemagick
+dir
+
+
+
+add
+
+gutenprint
+dir
+
+
+
+add
+
+perl
+dir
+
+
+
+add
+
+nss-mdns
+dir
+
+
+
+add
+
+spice-protocol
+dir
+
+
+
+add
+
+udev
+dir
+
+
+
+add
+
+at
+dir
+
+
+
+add
+
+strongswan
+dir
+
+
+
+add
+
+libnspr
+dir
+
+
+
+add
+
+memstat
+dir
+
+
+
+add
+
+zeromq
+dir
+
+
+
+add
+
+dstat
+dir
+
+
+
+add
+
+weston
+dir
+
+
+
+add
+
+inotify-tools
+dir
+
+
+
+add
+
+links
+dir
+
+
+
+add
+
+cache-calibrator
+dir
+
+
+
+add
+
+bc
+dir
+
+
+
+add
+
+qhull
+dir
+
+
+
+add
+
+squid
+dir
+
+
+
+add
+
+libnetfilter_conntrack
+dir
+
+
+
+add
+
+libbluray
+dir
+
+
+
+add
+
+msgpack
+dir
+
+
+
+add
+
+ndisc6
+dir
+
+
+
+add
+
+libxmlpp
+dir
+
+
+
+add
+
+e2tools
+dir
+
+
+
+add
+
+dtv-scan-tables
+dir
+
+
+
+add
+
+collectd
+dir
+
+
+
+add
+
+python-pysnmp-mibs
+dir
+
+
+
+add
+
+apr-util
+dir
+
+
+
+add
+
+cairo
+dir
+
+
+
+add
+
+dropbear
+dir
+
+
+
+add
+
+elf2flt
+dir
+
+
+
+add
+
+ramsmp
+dir
+
+
+
+add
+
+libical
+dir
+
+
+
+add
+
+vde2
+dir
+
+
+
+add
+
+mpfr
+dir
+
+
+
+add
+
+zsh
+dir
+
+
+
+add
+
+omniorb
+dir
+
+
+
+add
+
+thttpd
+dir
+
+
+
+add
+
+python-bottle
+dir
+
+
+
+add
+
+lmbench
+dir
+
+
+
+add
+
+sysstat
+dir
+
+
+
+add
+
+lttng-babeltrace
+dir
+
+
+
+add
+
+infozip
+dir
+
+
+
+add
+
+libee
+dir
+
+
+
+add
+
+glibc
+dir
+
+
+
+add
+
+mediastreamer
+dir
+
+
+
+add
+
+sdl_image
+dir
+
+
+
+add
+
+qextserialport
+dir
+
+
+
+add
+
+php
+dir
+
+
+
+add
+
+opentyrian
+dir
+
+
+
+add
+
+gawk
+dir
+
+
+
+add
+
+opencv
+dir
+
+
+
+add
+
+gtk2-engines
+dir
+
+
+
+add
+
+bsdiff
+dir
+
+
+
+add
+
+elftosb
+dir
+
+
+
+add
+
+agentpp
+dir
+
+
+
+add
+
+genpart
+dir
+
+
+
+add
+
+libev
+dir
+
+
+
+add
+
+qtuio
+dir
+
+
+
+add
+
+python-simplejson
+dir
+
+
+
+add
+
+tvheadend
+dir
+
+
+
+add
+
+sysprof
+dir
+
+
+
+add
+
+python-pysnmp
+dir
+
+
+
+add
+
+tstools
+dir
+
+
+
+add
+
+libfslcodec
+dir
+
+
+
+add
+
+python-pyasn
+dir
+
+
+
+add
+
+cramfs
+dir
+
+
+
+add
+
+yaffs2utils
+dir
+
+
+
+add
+
+libjpeg
+dir
+
+
+
+add
+
+irda-utils
+dir
+
+
+
+add
+
+libart
+dir
+
+
+
+add
+
+localedef
+dir
+
+
+
+add
+
+divine
+dir
+
+
+
+add
+
+netsnmp
+dir
+
+
+
+add
+
+rrdtool
+dir
+
+
+
+add
+
+tar
+dir
+
+
+
+add
+
+libglib2
+dir
+
+
+
+add
+
+rubix
+dir
+
+
+
+add
+
+slirp
+dir
+
+
+
+add
+
+bmon
+dir
+
+
+
+add
+
+lunit
+dir
+
+
+
+add
+
+busybox
+dir
+
+
+
+add
+
+fetchmail
+dir
+
+
+
+add
+
+flex
+dir
+
+
+
+add
+
+python-id3
+dir
+
+
+
+add
+
+zlib
+dir
+
+
+
+add
+
+audiofile
+dir
+
+
+
+add
+
+python-pygame
+dir
+
+
+
+add
+
+xavante
+dir
+
+
+
+add
+
+htop
+dir
+
+
+
+add
+
+ola
+dir
+
+
+
+add
+
+libsoc
+dir
+
+
+
+add
+
+libass
+dir
+
+
+
+add
+
+proftpd
+dir
+
+
+
+add
+
+mpc
+dir
+
+
+
+add
+
+file
+dir
+
+
+
+add
+
+mpd
+dir
+
+
+
+add
+
+libgc
+dir
+
+
+
+add
+
+acpid
+dir
+
+
+
+add
+
+smartmontools
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+sdl
+dir
+
+
+
+add
+
+vala
+dir
+
+
+
+add
+
+dsp-tools
+dir
+
+
+
+add
+
+gtest
+dir
+
+
+
+add
+
+libqrencode
+dir
+
+
+
+add
+
+ed
+dir
+
+
+
+add
+
+libroxml
+dir
+
+
+
+add
+
+wpa_supplicant
+dir
+
+
+
+add
+
+quota
+dir
+
+
+
+add
+
+fontconfig
+dir
+
+
+
+add
+
+libelf
+dir
+
+
+
+add
+
+libmpeg2
+dir
+
+
+
+add
+
+libidn
+dir
+
+
+
+add
+
+tcpreplay
+dir
+
+
+
+add
+
+ocf-linux
+dir
+
+
+
+add
+
+genext2fs
+dir
+
+
+
+add
+
+vpnc
+dir
+
+
+
+add
+
+procps
+dir
+
+
+
+add
+
+swig
+dir
+
+
+
+add
+
+crda
+dir
+
+
+
+add
+
+distcc
+dir
+
+
+
+add
+
+lbreakout2
+dir
+
+
+
+add
+
+ngrep
+dir
+
+
+
+add
+
+sed
+dir
+
+
+
+add
+
+hdparm
+dir
+
+
+
+add
+
+xfsprogs
+dir
+
+
+
+add
+
+libpthread-stubs
+dir
+
+
+
+add
+
+sunxi-boards
+dir
+
+
+
+add
+
+usb_modeswitch
+dir
+
+
+
+add
+
+openssh
+dir
+
+
+
+add
+
+python-netifaces
+dir
+
+
+
+add
+
+lockfile-progs
+dir
+
+
+
+add
+
+libmodbus
+dir
+
+
+
+add
+
+libsvg-cairo
+dir
+
+
+
+add
+
+tcl
+dir
+
+
+
+add
+
+latencytop
+dir
+
+
+
+add
+
+openssl
+dir
+
+
+
+add
+
+bzip2
+dir
+
+
+
+add
+
+mkpasswd
+dir
+
+
+
+add
+
+libgpg-error
+dir
+
+
+
+add
+
+libcurl
+dir
+
+
+
+add
+
+squashfs
+dir
+
+
+
+add
+
+webp
+dir
+
+
+
+add
+
+spawn-fcgi
+dir
+
+
+
+add
+
+libbsd
+dir
+
+
+
+add
+
+poco
+dir
+
+
+
+add
+
+synergy
+dir
+
+
+
+add
+
+sound-theme-freedesktop
+dir
+
+
+
+add
+
+lua-messagepack
+dir
+
+
+
+add
+
+mtdev2tuio
+dir
+
+
+
+add
+
+libmicrohttpd
+dir
+
+
+
+add
+
+php-ssh2
+dir
+
+
+
+add
+
+mysql
+dir
+
+
+
+add
+
+noip
+dir
+
+
+
+add
+
+knock
+dir
+
+
+
+add
+
+portaudio
+dir
+
+
+
+add
+
+libssh2
+dir
+
+
+
+add
+
+dado
+dir
+
+
+
+add
+
+curlftpfs
+dir
+
+
+
+add
+
+logsurfer
+dir
+
+
+
+add
+
+usb_modeswitch_data
+dir
+
+
+
+add
+
+libtheora
+dir
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+iprutils
+dir
+
+
+
+add
+
+genimage
+dir
+
+
+
+add
+
+filemq
+dir
+
+
+
+add
+
+netcat
+dir
+
+
+
+add
+
+opengl
+dir
+
+
+
+add
+
+opus-tools
+dir
+
+
+
+add
+
+heirloom-mailx
+dir
+
+
+
+add
+
+libpthsem
+dir
+
+
+
+add
+

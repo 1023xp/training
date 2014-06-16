@@ -1,0 +1,7 @@
+This directory contains the original userspace tool (exmap.pl) and
+associated code and tests. As of exmap version 0.8, the C++ version is
+the intended userspace tool (it is faster and uses less memory).
+
+Please feel free to make use of this, older perl version but be warned
+that I'd rather add any missing features to the C++ version than keep
+this perl version up to date.

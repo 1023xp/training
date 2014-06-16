@@ -1,0 +1,43 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+# 确保使用的是足够新的Autoconf版本。如果用于创建configure的Autoconf的版
+# 本比version 要早，就在标准错误输出打印一条错误消息并不会创建configure
+
+AC_PREREQ(2.61)
+
+#
+# 初始化,定义软件的基本信息,包括设置包的全称,版本号以及报告BUG时需要用的邮箱地址
+#
+#AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
+AC_INIT(test, 1.0, 21cnbao@gmail.com)
+
+#
+# 用来侦测所指定的源码文件是否存在，来确定源码目录的有效性
+#
+AC_CONFIG_SRCDIR([add.c])
+
+#
+# 用于生成config.h文件，以便autoheader使用
+#
+AC_CONFIG_HEADER([config.h])
+
+#添加宏AM_INIT_AUTOMAKE, 它是automake所必备的宏，也同前面一样，PACKAGE是所要产生软件套件的名称，VERSION是版本编号。
+AM_INIT_AUTOMAKE(test,1.0)
+
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+
+#
+# 创建输出文件。在`configure.in'的末尾调用本宏。
+#
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT

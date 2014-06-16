@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/xenomai
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+xenomai-0001-arm-enable-armv5tej-support.patch
+file
+
+
+
+add
+
+xenomai-0002-posix-fix-build-failure-when-HAVE_OPEN64-is-undefine.patch
+file
+
+
+
+add
+
+xenomai.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

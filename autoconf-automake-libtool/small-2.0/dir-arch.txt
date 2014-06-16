@@ -1,0 +1,9 @@
+Before starting to write code for any project, you need to decide on the directory structure you will use to organise the code. I like to build each component of a project in its own subdirectory, and to keep the configuration sources separate from the source code. The great majority of GNU projects I have seen use a similar method, so adopting it yourself will likely make your project more familiar to your developers by association.
+
+The top level directory is used for configuration files, such as `configure' and `aclocal.m4', and for a few other sundry files, `README' and a copy of the project license for example.
+
+Any significant libraries will have a subdirectory of their own, containing all of the sources and headers for that library along with a `Makefile.am' and anything else that is specific to just that library. Libraries that are part of a small like group, a set of pluggable application modules for example, are kept together in a single directory.
+
+The sources and headers for the project's main application will be stored in yet another subdirectory, traditionally named `src'. There are other conventional directories your developers might expect too: A `doc' directory for project documentation; and a `test' directory for the project self test suite.
+
+To keep the project top-level directory as uncluttered as possible, as I like to do, you can take advantage of Autoconf's `AC_CONFIG_AUX_DIR' by creating another directory, say `config', which will be used to store many of the GNU Autotools intermediate files, such as install-sh. I always store all project specific Autoconf M4 macros to this same subdirectory. 

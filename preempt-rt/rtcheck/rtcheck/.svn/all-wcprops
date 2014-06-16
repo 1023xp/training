@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/CHANGELOG
+END
+rtcheck-0.7.6.tar.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/rtcheck-0.7.6.tar.bz2
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/README
+END
+rtcheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/rtcheck.c
+END
+rtcheck.init
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/286/trunk/training/preempt-rt/rtcheck/rtcheck/rtcheck.init
+END

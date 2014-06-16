@@ -1,0 +1,77 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/samba
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+simple.conf
+file
+
+
+
+add
+
+S91smb
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+samba-0001-fix-smbd-libs-avahi.patch
+file
+
+
+
+add
+
+samba-0002-getaddrinfo.patch
+file
+
+
+
+add
+
+samba.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

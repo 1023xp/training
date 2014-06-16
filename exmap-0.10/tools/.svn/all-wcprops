@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools
+END
+memload.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/memload.c
+END
+allocer.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/allocer.c
+END
+mapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/mapper.c
+END
+sharedarray
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/sharedarray
+END
+getpagesize
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/getpagesize
+END
+mapit
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/mapit
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/Makefile
+END
+memload
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/memload
+END
+allocer
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/allocer
+END
+mapper
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/mapper
+END
+sharedarray.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/sharedarray.c
+END
+getpagesize.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/getpagesize.c
+END
+sharedarray.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/sharedarray.h
+END
+sharedarraymain.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/sharedarraymain.c
+END
+mapit.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/mapit.c
+END
+pagesize.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/38/trunk/training/exmap-0.10/tools/pagesize.h
+END

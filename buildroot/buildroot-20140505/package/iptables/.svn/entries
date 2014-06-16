@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/iptables
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+iptables-01-fix-static-link.patch
+file
+
+
+
+add
+
+iptables-02-iptables-ip-6-tables-save.c-remove-dlfcn.h-include.patch
+file
+
+
+
+add
+
+iptables.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

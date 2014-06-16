@@ -1,0 +1,12 @@
+(void) (&_x == &_y);
+explicitly cast it to void (nothing), indicating that you didn't care about the value
+
+  int main(int argc, char *argv[])
+  {
+      (void)argc;
+      (void)argv;
+      return (0);
+  }
+
+
+It's just a way of creating a 'harmless' reference to the variable. The compiler doesn't complain about an unused variable, because you did reference the value, and it doesn't complain that you didn't do anything with the value of the expression var because you explicitly cast it to void (nothing), indicating that you didn't care about the value. 

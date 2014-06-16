@@ -1,0 +1,28 @@
+#所有的源文件--  .c文件列表
+SRCS = $(wildcard *.c)
+#
+#所有的.o文件列表
+OBJS =$(SRCS:.c=.o)
+
+test: $(OBJS)
+	gcc -o $@ $^
+#
+#生成依赖信息
+MAKEDEPEND = gcc -MM    
+                    
+#生成.o的对自己目录中.h .c的依赖信息到.depend文件中
+#程序首次编译时肯定不存在.depend文件，但这是makefile也不需要该文件，因为首次编译肯定连接的都是最新文件。
+#也就是说首次编译时生成 的.depend文件其实没用上，而是留作以后有了改动，比如更改了.h文件中的宏变量，则此时
+#可根据.depend中的依赖关系只生成对应的.o文件了
+.depend:
+	gcc -MM  $(SRCS) > $@
+#只要有这个声明，不管是否有“.depend”文件，要运行“.depend”这个目标
+.PHONY: .depend
+
+#引入了.o文件对.c和.h的依赖情况。以后.h被修改也会重新make
+include .depend    
+
+#忽略命令的出错，我们可以在Makefile的命令行前加一个减号“-”（在Tab键之后），标记为不管命令出不出错都认为是成功
+clean:
+	-rm *.o
+	-rm test

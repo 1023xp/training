@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/heimdal
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+heimdal-0004-compile_et.patch
+file
+
+
+
+add
+
+heimdal-0002-use-Getopt-Std.patch
+file
+
+
+
+add
+
+heimdal-0001-add-roken-h-process.patch
+file
+
+
+
+add
+
+heimdal.mk
+file
+
+
+
+add
+
+heimdal-0003-vendor.patch
+file
+
+
+
+add
+

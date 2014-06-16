@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/NEWS
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/aclocal.m4
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/install-sh
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/configure
+END
+gen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/gen.sh
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/Makefile.in
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/AUTHORS
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/configure.in
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/depcomp
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/ChangeLog
+END
+autoscan.log
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/autoscan.log
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/README
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/config.h.in
+END
+configure.scan
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/configure.scan
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/main.c
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/COPYING
+END
+add.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/add.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/149/trunk/training/autoconf-automake/project-simple_plus/missing
+END

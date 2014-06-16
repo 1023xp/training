@@ -1,0 +1,147 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+freescale
+dir
+
+
+
+add
+
+cubietech
+dir
+
+
+
+add
+
+olimex
+dir
+
+
+
+add
+
+gnublin
+dir
+
+
+
+add
+
+wandboard
+dir
+
+
+
+add
+
+armadeus
+dir
+
+
+
+add
+
+atmel
+dir
+
+
+
+add
+
+raspberrypi
+dir
+
+
+
+add
+
+qemu
+dir
+
+
+
+add
+
+altera
+dir
+
+
+
+add
+
+avnet
+dir
+
+
+
+add
+
+minnowboard
+dir
+
+
+
+add
+
+arm
+dir
+
+
+
+add
+
+calao
+dir
+
+
+
+add
+
+telit
+dir
+
+
+
+add
+
+beaglebone
+dir
+
+
+
+add
+
+boundarydevices
+dir
+
+
+
+add
+

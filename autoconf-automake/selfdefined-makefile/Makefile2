@@ -1,0 +1,7 @@
+SOURCES = $(wildcard *.c ./init/*.c ./main/*.c) 
+OBJS = $(patsubst %.c,%.o,$(SOURCES)) 
+NODIR_OBJS = $(notdir $(OBJS)) 
+all:
+	@echo $(SOURCES)
+	@echo $(OBJS)
+	@echo $(NODIR_OBJS)

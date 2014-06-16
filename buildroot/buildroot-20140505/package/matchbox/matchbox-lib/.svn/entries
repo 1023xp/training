@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/matchbox/matchbox-lib
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+matchbox-lib-0002-libpng15.patch
+file
+
+
+
+add
+
+matchbox-lib-0001-index-is-legacy.patch
+file
+
+
+
+add
+
+matchbox-lib-0003-include-setjmp-h.patch
+file
+
+
+
+add
+
+matchbox-lib.mk
+file
+
+
+
+add
+

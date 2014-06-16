@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src
+END
+sic
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic
+END
+sic.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic.c
+END
+sic_repl.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic_repl.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/Makefile.in
+END
+configure.scan
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/configure.scan
+END
+sic.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic.h
+END
+sic_syntax.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic_syntax.c
+END
+sic_builtin.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/sic_builtin.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/Makefile.am
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/src/Makefile
+END

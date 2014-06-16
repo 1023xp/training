@@ -1,0 +1,5 @@
+test: main.o add.o
+	$(CC) $(CFLAGS) -o $@ $^
+clean:
+	rm *.o
+	rm test

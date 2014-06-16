@@ -1,0 +1,77 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board/telit/evk-pro3
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+barebox-2013.04.0-0003-at91sam9260-9g20-add-wathdog-support.patch
+file
+
+
+
+add
+
+readme.txt
+file
+
+
+
+add
+
+barebox-2013.04.0-0001-watchdog-add-keep-alive-support.patch
+file
+
+
+
+add
+
+barebox-2013.04.0-0005-watchdog-enable-for-evk-pro3.patch
+file
+
+
+
+add
+
+barebox-2013.04.0-0002-watchdog-add-at91sam9-watchdog-support.patch
+file
+
+
+
+add
+
+linux-3.9.config
+file
+
+
+
+add
+
+barebox-2013.04.0-0004-at91sam9260-9g20-fix-wathdog-support.patch
+file
+
+
+
+add
+

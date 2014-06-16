@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/246/trunk/training/network/simple
+END
+server.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/162/trunk/training/network/simple/server.c
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/162/trunk/training/network/simple/test.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/246/trunk/training/network/simple/Makefile
+END
+client.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/162/trunk/training/network/simple/client.c
+END

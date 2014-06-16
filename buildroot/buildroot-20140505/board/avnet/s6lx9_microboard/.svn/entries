@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/board/avnet/s6lx9_microboard
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+lx9_mmu.dts
+file
+
+
+
+add
+
+readme.txt
+file
+
+
+
+add
+
+lx9_mmu_defconfig
+file
+
+
+
+add
+

@@ -1,0 +1,2 @@
+add.o: add.c
+main.o: main.c include/add.h

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/README
+END
+config-h.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/config-h.in
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/configure.ac
+END
+dir-arch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/dir-arch.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/NEWS
+END
+bootstrap
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/bootstrap
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/aclocal.m4
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/Makefile
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/Makefile.in
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/AUTHORS
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/config.log
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/config.status
+END
+config-in.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/config-in.txt
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/ChangeLog
+END
+stamp-h1
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/stamp-h1
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/150/trunk/training/autoconf-automake-libtool/small-2.0/config.h
+END

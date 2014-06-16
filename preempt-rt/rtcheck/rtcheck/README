@@ -1,0 +1,43 @@
+The 'rtcheck' program is an application that tests the running system for
+real-time capabilities and reports back a 0 if all capabilities it looks
+for are identified and an error mask describing the capabilties that are
+not present, otherwise.  This program can be used by real-time-enabled
+programs to determine if the environment they are in is suitable for
+them to run [correctly].
+
+The 'rtcheck' program performs the following tests:
+
+Memory Lock:
+------------
+Verify user ability to mlock ~32K of memory.  Not actually a real-time
+capability, but because the JVM is the only program using 'rtcheck'
+currently, it's simplest to keep it here.
+
+Scheduler:
+----------
+Exercise the scheduler API to determine if it supports real-time; namely
+setting the scheduler to SCHED_FIFO.  If it takes, we know we have this
+capability.  We can also imply from this that SCHED_RR can also be set.
+
+CONFIG_PREEMPT_RT:
+------------------
+Look for the precense of /proc/loadavgrt.  If found, we can deduce that
+the system is running with CONFIG_PREEMPT_RT=y.
+
+Robust Mutexes:
+---------------
+Do lookups on a few symbols indicative of user space support of robust
+mutexes and then do test calls of them to confirm kernel support of
+robust mutexes.
+
+High Resolution Timers:
+-----------------------
+Nanosleep is timed using clock_nanosleep() and clock_gettime() calls. The
+value is compared against a threshold large enough to be infeasible on a
+system using hrtimers and small enough to be too fine-grained for a
+system not using hrtimers.  The threshold currently being used is 20us.
+
+Clock Resolution:
+-----------------
+Make sure the clock resolution is under ~200us.
+

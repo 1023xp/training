@@ -1,0 +1,35 @@
+In addition to the problem of writing portable sh code, another problem which confronts first-time `configure.in' writers is determining the order in which to run the various tests. Autoconf indirectly (via the autoscan program, which we cover in 24. Migrating an Existing Package to GNU Autotools) suggests a standard ordering, which is what we describe here.
+
+The standard ordering is:
+
+   1. Boilerplate. This section should include standard boilerplate code, such as the call to AC_INIT (which must be first), AM_INIT_AUTOMAKE, AC_CONFIG_HEADER, and perhaps AC_REVISION.
+
+   2. Options. The next section should include macros which add command-line options to configure, such as AC_ARG_ENABLE. It is typical to put support code for the option in this section as well, if it is short enough, like this example from libgcj:
+
+       	
+
+      AC_ARG_ENABLE(getenv-properties,
+      [  --disable-getenv-properties
+                                don't set system properties from GCJ_PROPERTIES])
+
+      dnl Whether GCJ_PROPERTIES is used depends on the target.
+      if test -n "$enable_getenv_properties"; then
+         enable_getenv_properties=${enable_getenv_properties_default-yes}
+      fi
+      if test "$enable_getenv_properties" = no; then
+         AC_DEFINE(DISABLE_GETENV_PROPERTIES)
+      fi
+
+   3. Programs. Next it is traditional to check for programs that are either needed by the configure process, the build process, or by one of the programs being built. This usually involves calls to macros like AC_CHECK_PROG and AC_PATH_TOOL.
+
+   4. Libraries. Checks for libraries come before checks for other objects visible to C (or C++, or anything else). This is necessary because some other checks work by trying to link or run a program; by checking for libraries first you ensure that the resulting programs can be linked.
+
+   5. Headers. Next come checks for existence of headers.
+
+   6. Typedefs and structures. We do checks for typedefs after checking for headers for the simple reason that typedefs appear in headers, and we need to know which headers we can use before we look inside them.
+
+   7. Functions. Finally we check for functions. These come last because functions have dependencies on the preceding items: when searching for functions, libraries are needed in order to correctly link, headers are needed in order to find prototypes (this is especially important for C++, which has stricter prototyping rules than C), and typedefs are needed for those functions which use or return types which are not built in.
+
+   8. Output. This is done by invoking AC_OUTPUT. 
+
+This ordering should be considered a rough guideline, and not a list of hard-and-fast rules. Sometimes it is necessary to interleave tests, either to make `configure.in' easier to maintain, or because the tests themselves do need to be in a different order. For instance, if your project uses both C and C++ you might choose to do all the C++ checks after all the C checks are done, in order to make `configure.in' a bit easier to read. 

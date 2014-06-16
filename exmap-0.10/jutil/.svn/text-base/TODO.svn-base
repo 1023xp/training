@@ -1,0 +1,22 @@
+- add better filehandling to jutil
+	- replace 'is_in_current_dir' in TestRunner
+
+- add error reporting (use jutils::warn?)
+
+- store failed file, line and string and allow access afterwards (by
+  test number).
+
+- add more test language support (e.g. skipped tests)
+
+- TestRunner needs an abstract base which doesn't take an ostream&
+	- allow for a GUI, for example
+	- ConsoleTestRunner should inherit
+	- or maybe not...just different reporting methods
+
+
+DONE - pull out the Pcre + jutil code into library routines
+	- aha...add the test runner to the library...
+	- need to ship it for "make test"
+
+DONE - check plan
+

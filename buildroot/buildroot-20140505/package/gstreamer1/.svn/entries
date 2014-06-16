@@ -1,0 +1,91 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/gstreamer1
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+gst-omx
+dir
+
+
+
+add
+
+gstreamer1.mk
+file
+
+
+
+add
+
+gst1-plugins-bad
+dir
+
+
+
+add
+
+gst1-plugins-good
+dir
+
+
+
+add
+
+gst1-plugins-base
+dir
+
+
+
+add
+
+gst1-libav
+dir
+
+
+
+add
+
+gstreamer1
+dir
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+gst1-plugins-ugly
+dir
+
+
+
+add
+

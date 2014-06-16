@@ -1,0 +1,19 @@
+1. fork, vfork, copy-on-write
+training/process/fork
+2. exec + pipe
+training/process/shell_pipe.c
+3. signal
+training/process/signal.c
+4. signal mask
+training/thread/signal_non_reenteriable.c
+training/thread/signal_non_reenteriable_fixed.c
+5. sharemem
+training/process/sharemem_w.c
+training/process/sharemem_r.c
+6. orphan process
+fork a process, kill the parent-process, check the status of son-process;
+fork a process, kill the son-process, parent-process doesn't wait son-process
+7. process life period
+training/process/life_period.c
+8. daemon process
+training/process/daemon.c

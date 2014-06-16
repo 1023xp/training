@@ -1,0 +1,10 @@
+echo $((48*1024*1024)) > /sys/block/zram0/disksize
+
+swapon -p 10 /dev/zram0
+
+cat /proc/swaps 
+Filename				Type		Size	Used	Priority
+/dev/sda5                               partition	747516	0	-1
+/dev/zram0                              partition	49148	0	10
+
+

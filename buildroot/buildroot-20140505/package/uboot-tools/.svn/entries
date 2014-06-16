@@ -1,0 +1,63 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/uboot-tools
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+Config.in.host
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+uboot-tools.mk
+file
+
+
+
+add
+
+uboot-tools-01-drop-configh-from-tools.patch
+file
+
+
+
+add
+
+uboot-tools-02-hostcflags-override-fix.patch
+file
+
+
+
+add
+

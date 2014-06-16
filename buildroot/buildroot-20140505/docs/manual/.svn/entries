@@ -1,0 +1,427 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/docs/manual
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+manual.txt
+file
+
+
+
+add
+
+customize-busybox-config.txt
+file
+
+
+
+add
+
+adding-packages-tips.txt
+file
+
+
+
+add
+
+adding-packages-cmake.txt
+file
+
+
+
+add
+
+developer-guide.txt
+file
+
+
+
+add
+
+going-further.txt
+file
+
+
+
+add
+
+adding-packages-python.txt
+file
+
+
+
+add
+
+configure.txt
+file
+
+
+
+add
+
+beyond-buildroot.txt
+file
+
+
+
+add
+
+makeusers-syntax.txt
+file
+
+
+
+add
+
+adding-packages-luarocks.txt
+file
+
+
+
+add
+
+using.txt
+file
+
+
+
+add
+
+adding-packages-virtual.txt
+file
+
+
+
+add
+
+adding-packages-autotools.txt
+file
+
+
+
+add
+
+common-usage.txt
+file
+
+
+
+add
+
+make-tips.txt
+file
+
+
+
+add
+
+customize-outside-br.txt
+file
+
+
+
+add
+
+customize-packages.txt
+file
+
+
+
+add
+
+getting.txt
+file
+
+
+
+add
+
+how-buildroot-works.txt
+file
+
+
+
+add
+
+adding-packages-directory.txt
+file
+
+
+
+add
+
+known-issues.txt
+file
+
+
+
+add
+
+manual.mk
+file
+
+
+
+add
+
+using-buildroot-development.txt
+file
+
+
+
+add
+
+appendix.txt
+file
+
+
+
+add
+
+customize-store.txt
+file
+
+
+
+add
+
+adding-packages-conclusion.txt
+file
+
+
+
+add
+
+starting-up.txt
+file
+
+
+
+add
+
+download-location.txt
+file
+
+
+
+add
+
+contribute.txt
+file
+
+
+
+add
+
+ccache-support.txt
+file
+
+
+
+add
+
+prerequisite.txt
+file
+
+
+
+add
+
+introduction.txt
+file
+
+
+
+add
+
+customize.txt
+file
+
+
+
+add
+
+adding-packages-hooks.txt
+file
+
+
+
+add
+
+customize-uclibc-config.txt
+file
+
+
+
+add
+
+adding-packages-gettext.txt
+file
+
+
+
+add
+
+working-with.txt
+file
+
+
+
+add
+
+package-make-target.txt
+file
+
+
+
+add
+
+debugging-buildroot.txt
+file
+
+
+
+add
+
+faq-troubleshooting.txt
+file
+
+
+
+add
+
+patch-policy.txt
+file
+
+
+
+add
+
+customize-rootfs.txt
+file
+
+
+
+add
+
+customize-toolchain.txt
+file
+
+
+
+add
+
+makedev-syntax.txt
+file
+
+
+
+add
+
+rebuilding-packages.txt
+file
+
+
+
+add
+
+adding-packages-perl.txt
+file
+
+
+
+add
+
+adding-packages.txt
+file
+
+
+
+add
+
+legal-notice.txt
+file
+
+
+
+add
+
+get-involved.txt
+file
+
+
+
+add
+
+customize-kernel-config.txt
+file
+
+
+
+add
+
+download-infra.txt
+file
+
+
+
+add
+
+using-buildroot-toolchain.txt
+file
+
+
+
+add
+
+advanced.txt
+file
+
+
+
+add
+
+eclipse-integration.txt
+file
+
+
+
+add
+
+writing-rules.txt
+file
+
+
+
+add
+
+adding-packages-generic.txt
+file
+
+
+
+add
+

@@ -1,0 +1,84 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/util-linux
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+util-linux-002-program-invocation-short-name.patch
+file
+
+
+
+add
+
+util-linux-003-c.h-define-mkostemp-for-older-version-of-uClibc.patch
+file
+
+
+
+add
+
+util-linux.mk
+file
+
+
+
+add
+
+su.pam
+file
+
+
+
+add
+
+login.pam
+file
+
+
+
+add
+
+Config.in.host
+file
+
+
+
+add
+
+util-linux-001-sscanf-no-ms-as.patch
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+

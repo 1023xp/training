@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/207/trunk/training/program-c/likely
+END
+likely.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/207/trunk/training/program-c/likely/likely.c
+END
+unlikely.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/207/trunk/training/program-c/likely/unlikely.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/207/trunk/training/program-c/likely/Makefile
+END

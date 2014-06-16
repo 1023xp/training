@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/mesa3d
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+Config.in
+file
+
+
+
+add
+
+mesa3d.mk
+file
+
+
+
+add
+
+mesa3d-0001-Fix-khrplatform.h-not-installed-if-EGL-is-disabled.patch
+file
+
+
+
+add
+

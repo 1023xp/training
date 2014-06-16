@@ -1,0 +1,229 @@
+Each release
+============
+
+- Check Debian BTS
+	- bug numbers in changelog
+	- mailer off tag to debian bts
+
+- mail exmap-announce
+
+- test on FC4 (FC5?)
+
+- test on ARM (slug)
+
+- check /var/log/messages during make test
+	- add to tests themselves?
+
+For 0.10
+========
+
+DONE - have 'make exmtool' not depend on gtk/X 
+
+DONE - Change list labels when we select 
+	(e.g. maps for process X, maps for all procs)
+
+DONE - Review 'not selected' text as well
+
+DONE - provide resizable columns
+
+DONE - fix seg when clicking checkbox with no lib selected (grey checkbox)
+
+DONE - test 'all procs' works for ELF *symbols* too
+
+DONE - avoid very long cmdlines (see patch from Lubos) 
+
+DONE - Add About dialogue (from button) for shameless self-promotion
+
+DONE - File view should all (and default to) sums over all procs
+	DONE - add checkbox (all procs/this proc)
+
+DONE - mad non-linear CPU usage
+	- file tab
+	- select libqt (used by psi)
+	- select /usr/bin/psi process
+	- select .texto
+	- Looks like sorting on adding to the listbox
+
+DONE - read *dynamic* symbols from ELF files
+	- does this do what we need?
+
+DONE - text/fix dump_maps
+
+DONE - merge 0.9 64bit work into trunk (check diffs on trunk...worth keeping?)
+	- and getpagesize()
+	- maybe start from 0.9 and add in...
+
+DONE - look at the "global memory analysis tool" gmail, some good todos in there
+
+DONE - remove leading _ on buttons
+
+DONE - add keyboard accelerators to buttons
+
+NO - add keyboard accelerators to tabs
+
+DONE - update ELF sections when file changes (proc might be NULL)
+
+OK - are some of the 'sums' with 'all processes' set invalid as sums?
+
+DONE - need to clear all sub-sections when we change something higher up
+	- e.g. picking new process clears file
+		- but elf sections don't change
+
+DONE - clear symbols when sections change?
+
+NOTABUG? - check .got bug from Lubos
+	- add auto test case before fixing
+		- pick out ELF section which must have writable > 0
+
+Sometime
+========
+
+- cross-propagate file/proc selection between tabs
+	- optional?
+		- allow optional checkboxes to be set by
+		cmdline and/or env var. avoids cfg file?
+
+- cmdline sorting should ignore path
+
+- keep PID? remove pid? father-son sort?
+	- can we move some info out of the 'processes' list and into 
+	an 'info' area below the list?
+	e.g. 'full cmdline', parent pid (clickable!), children, 
+
+- rename 'writable' column
+	- improve doc for writable column
+
+
+- add some kind of in-application help
+
+- add tooltips
+
+- drop most boost::shared_ptr usage. We build large std::lists of these
+    things, leading to lots of object creation.
+	- e.g. run under gdb, select an ELF section with many symbols and
+	sample backtrace (with ctrl-C, bt, c) a few times
+
+- add an icon (does this need gnome?)
+
+- change kernel interface to /proc/<pid>/exmap
+
+- shrink Panes sensibly when window resized (hook signal and even up?)
+	- go to 4-way split on resize? (and startup?)
+	- or just set 'expand' on panes?
+
+- write data to file, load from file (add a FileSysInfo type)
+	- use this to instrument slug
+	- also use in main gexmap to reduce mem footprint during analysis?
+
+- memprof shows
+	- how much is allocated during reading info?
+		- use massif
+		- memprof on "write data to file" tool
+	- 19Mb allocated
+		- 6.5Mb in Vma::add_pages, from vector.push_back
+			- consider shrinking class Page?
+				- wasting 30 bits/class at the moment on padding
+			- could just store 'page index' into the PagePool
+				- and have PagePool store the bits
+				- warning if they aren't the same on all?
+				- also, common case is contig indices
+				into PagePool, so could store a 'Range'...
+		- 2.5Mb in PagePool::inc_page_count/map[]
+		- 0.7Mb in allocated class Vmas
+			- could lose the selfptr nonsense
+				- maybe drop the shared_ptr stuff entirely?
+		- 3.9Mb in File::open_file()
+			- open ifstreams!
+			- need to close off open fds!
+				- reopen if needed
+
+- add dirty column from pte_dirty (suggestion from didier)
+
+- consider having per proc/file in a seperate window (reduce clutter)
+
+- consider byte-sized sizes for smaller items like symbols
+
+- consider adding columns (like 'swapped') and having config file
+
+- command line tool
+  - list procs/files with summary
+  - specify proc/file and get basic info
+  - specify proc/file and list files/procs
+  - specify proc+file and list ELF info?
+  - specify file/ELF section
+
+- consider handling totals differently
+  - best would be something outside of the file/proc tab.
+  - a single text string on the bottombar looks ugly
+    - multiple labels?
+      - too wide
+    - perhaps split over two lines or something?
+  - even if keep totals in proc list, perhaps add to file too?
+
+- somehow test on 64bit
+	- finish sysinfo
+		- merge read_vma and read_page_info so can override
+		them both in test sysinfo
+			- have read /proc/x/maps as protected func
+		- write TestNoModuleLinuxSysInfo
+			- which reads /proc/x/maps and makes up page info
+				- is there a way to make it test-compatible?
+				- or skip those tests if in that mode?
+		- add a switch (on ENV var?) to enable no-module mode
+		for t_exmap
+		- test locally
+		- test on hp testdrive
+
+- add coverage testing support to makefile
+	- better Exmap coverage
+	- 	mkdir -p ./coverage
+	lcov --directory $STAP_OBJ --zerocounters
+	runtest --tool=systemtap
+	lcov --directory $STAP_OBJ --capture --output-file ./coverage/stap.info
+	genhtml -o ./coverage ./coverage/stap.info
+
+- document non-page-aligned values for files
+
+- try and show thread stack usage
+	- maybe additional info from kernel module?
+
+- support earlier kernel versions (no pud_t. See mail from Joaquim)
+	- also need to worry about [vdso] name
+
+- we can have a map to a (deleted) file. We'll fail to open this
+(d'uh). What problem does this cause? Just a "non elf" file?
+
+- read /proc/k?mem using pfn to show hex contents?
+	- I think /dev/mem is what is wanted.
+	- shift pfn to get a physical address
+	- seek & read /dev/mem to read data
+
+	- add a 'RangeView' to exmap.pl
+		- pfns are in Vma, so add 'read_mem_range' to that?
+
+- Find a way to identify glibc [anon] maps as heap
+
+- We are holding an open fd to each Elf file. We probably need it to
+seek to read symbols, unless we open/close there (or make it private
+and do it in the caller).
+
+- add 'reload'
+	- check for memleaks caused by shared_ptr
+	- if we do 'reload', functionality then will need to explicitly break
+	proc <-> file <-> vma links since the shared_ptr's are refcounting
+	won't. (use weak_ptr) (also problems with selfptr nonsense)
+
+- right justify Sizes
+	- use %10.2f as the format
+	- but then need fixed-width font in text renderer
+		- do-able?
+		- perhaps change default font for all of it?
+		- could pad with leading zeros <ugh>
+
+- doxygen
+	- basic doc on all classes
+	- need to mark todo's as \todo
+	DONE - add TODO generation
+	DONE - up and running
+
+------------------------------------------------------------

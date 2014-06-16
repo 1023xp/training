@@ -1,0 +1,2 @@
+gcc -g -O0 -fPIC -shared -Wl,-soname,libab.so.1 -o libab.so.1.0 ab.c
+

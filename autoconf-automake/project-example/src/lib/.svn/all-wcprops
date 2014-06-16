@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/lib
+END
+swap.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/lib/swap.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/lib/Makefile.am
+END

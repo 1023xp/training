@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/40/trunk/training/exmap-0.10/jutil
+END
+jutil.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/40/trunk/training/exmap-0.10/jutil/jutil.hpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/40/trunk/training/exmap-0.10/jutil/Makefile
+END
+Trun.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/Trun.hpp
+END
+Pcre.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/Pcre.hpp
+END
+gtktrun.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/gtktrun.cpp
+END
+TestRunner.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/TestRunner.hpp
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/TODO
+END
+jutil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/40/trunk/training/exmap-0.10/jutil/jutil.cpp
+END
+trun.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/trun.cpp
+END
+Pcre.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/Pcre.cpp
+END
+TestRunner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/TestRunner.cpp
+END
+egtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/38/trunk/training/exmap-0.10/jutil/egtest.cpp
+END

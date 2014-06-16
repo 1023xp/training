@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/ModuleA/apple/shell
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/ModuleA/apple/shell/Makefile.am
+END
+apple.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/147/trunk/training/autoconf-automake/project-example/src/ModuleA/apple/shell/apple.c
+END

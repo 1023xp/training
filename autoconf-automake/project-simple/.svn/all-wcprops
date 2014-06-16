@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/264/trunk/training/autoconf-automake/project-simple
+END
+add.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/add.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/NEWS
+END
+autoscan.log
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/autoscan.log
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/README
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/264/trunk/training/autoconf-automake/project-simple/Makefile.in
+END
+gen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/gen.sh
+END
+configure.scan
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/295/trunk/training/autoconf-automake/project-simple/configure.scan
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/AUTHORS
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/148/trunk/training/autoconf-automake/project-simple/main.c
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/151/trunk/training/autoconf-automake/project-simple/configure.in
+END

@@ -1,0 +1,49 @@
+10
+
+dir
+0
+https://ldd6410.googlecode.com/svn/trunk/training/buildroot/buildroot-20140505/package/readline
+https://ldd6410.googlecode.com/svn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2289ec02-a210-11de-bfb1-cf57f9aef694
+
+readline.mk
+file
+
+
+
+add
+
+Config.in
+file
+
+
+
+add
+
+readline-001-curses-link.patch
+file
+
+
+
+add
+
